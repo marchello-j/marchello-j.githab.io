@@ -1,0 +1,34 @@
+.promo {
+  background-image: url(../../my_page/img/pageheder/Rectangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.promo__container {
+   height: 100%;
+   display: flex;
+}
+
+.promo__content {
+  display: flex;
+  align-items: center;
+}
+
+.promo__title {
+  margin: 20px 15px;
+}
+
+.promo__subtitle {
+  font-family: Lifehack;
+  margin-top: 35px;
+  font-size: 56px;
+  color: $white;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+.promo__img {
+  margin: 0 0 60px 15px;
+}

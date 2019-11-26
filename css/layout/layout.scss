@@ -1,0 +1,61 @@
+body, 
+html {
+ height: 100%;
+ font-family: 'Gagalin' sans-serif;
+ font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-family: Gagalin;
+  font-size: 72px;
+  color: #f9b43b;
+  line-height: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  & > li {
+  list-style: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: inherit;
+}

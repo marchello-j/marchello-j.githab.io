@@ -1,0 +1,35 @@
+// normalze
+
+@import "css/layout/normalize";
+
+// font
+
+@import "css/font/stylesheet";
+
+// base
+
+@import "css/layout/layout";
+
+// color
+
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+$white: #fff;
+
+// blocks
+
+@import "css/blocks/header";
+@import "css/blocks/nav";
+@import "css/blocks/promo";
+@import "css/blocks/btn";
+@import "css/blocks/best";
+@import "css/blocks/dark";
+@import "css/blocks/team";
+@import "css/blocks/menu";
+@import "css/blocks/comment";
+@import "css/blocks/work";
+@import "css/blocks/form";
+@import "css/blocks/footer";
+

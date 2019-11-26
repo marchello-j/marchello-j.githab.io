@@ -1,0 +1,132 @@
+.form {
+  background-image: url(../../my_page/img/pageform/bgform.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.form__container {
+  font-family: Ubuntu;
+  margin: 0px auto; 
+  border-radius: 3px;
+  padding: 50px 70px;
+}
+
+.form__title {
+  font-size: 72px;
+  font-family: gagalin;
+  color: $yellow;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form__list {
+  display: flex;
+  justify-content: space-between;
+
+}
+.form__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__name {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.form__street {
+  margin-bottom: 15px;
+}
+
+.form__namber {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__col {
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.form__label {
+  display: inline-block;
+  width: 100%;
+}
+
+.form__label_title {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: $white;
+  width: 100%;
+}
+
+.form__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form__input::placeholder {
+  color: #cecdcd;
+}
+
+.form__input {
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 10px;
+  line-height: 10px;
+  color: #fff;
+  padding: 11px 9px;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.form__input:focus {
+  border: 1px solid $yellow;
+}
+
+.form__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 8px;
+}
+.btn {
+  padding: 12px 15px;
+  border-radius: 5px;
+  background-color: $red;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  font-size: 13px;
+}
+
+.btn:hover {
+  background: $yellow;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form__radio {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.form__radio_real {
+  width: 10px;
+  height: 10px;
+  margin: 0 -10px -10px 0;
+  opacity: 0;
+}
+

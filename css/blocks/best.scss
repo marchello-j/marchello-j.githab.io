@@ -1,0 +1,48 @@
+.best {
+   background-image: url(../../my_page/img/pagetwo/bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   position: relative;
+}
+
+.best__content {
+  margin-bottom: 140px;  
+}
+
+.best__title {
+  display: flex;
+  justify-content: center;
+  color: $black;
+  margin-bottom: 50px;
+  letter-spacing: 4px;
+}
+
+.best__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.best__img {
+  margin-bottom: 30px;
+}
+
+.best__item {
+  text-align: center;
+  flex-basis: 33%;
+}
+
+.best__subtitle {
+  font-family: lifehack;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.best__text {  
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(47, 50, 52, 0.8);
+}
