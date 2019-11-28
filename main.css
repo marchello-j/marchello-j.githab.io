@@ -504,7 +504,7 @@ button {
   font-size: 13px; }
 
 .best {
-  background-image: url(../../my_page/img/pagetwo/bg.png);
+  background-image: url(./my_page/img/pagetwo/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
