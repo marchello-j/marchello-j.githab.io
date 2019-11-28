@@ -20,7 +20,7 @@
       display: block;
       margin-left: 15px;
     }
-    &:last-child:after {
+    &:nth-of-type(7):after {
         display: none;
     }
 }
