@@ -460,7 +460,7 @@ button {
   text-transform: uppercase; }
 
 .promo {
-  background-image: url(./../my_page/img/pageheder/Rectangle.png);
+  background-image: url(./my_page/img/pageheder/Rectangle.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -554,21 +554,21 @@ button {
   color: rgba(47, 50, 52, 0.8); }
 
 .dark {
-  background-image: url(../../my_page/img/pageburg/bg.png);
+  background-image: url(./my_page/img/pageburg/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   position: relative; }
 
 .team {
-  background-image: url(../../my_page/img/pageteam/bgteam.png);
+  background-image: url(./my_page/img/pageteam/bgteam.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   position: relative; }
 
 .menu {
-  background-image: url(../../my_page/img/pagemenu/bgmenu.png);
+  background-image: url(./my_page/img/pagemenu/bgmenu.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -637,14 +637,14 @@ button {
   transition: opacity .4s; }
 
 .work {
-  background-image: url(../../my_page/img/pagehowwork/bgwork.png);
+  background-image: url(./my_page/img/pagehowwork/bgwork.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   position: relative; }
 
 .form {
-  background-image: url(../../my_page/img/pageform/bgform.png);
+  background-image: url(./my_page/img/pageform/bgform.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -801,7 +801,7 @@ button {
   opacity: 0; }
 
 .footer {
-  background-image: url(../../my_page/img/pagefooter/bgfooter.png);
+  background-image: url(./my_page/img/pagefooter/bgfooter.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
