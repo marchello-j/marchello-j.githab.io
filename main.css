@@ -511,7 +511,7 @@ button {
   position: relative; }
 
 .best__content {
-  margin-bottom: 140px; }
+  margin-bottom: 40px; }
 
 .best__title {
   display: -webkit-box;
@@ -521,8 +521,9 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   color: #2f3234;
+  letter-spacing: 4px;
   margin-bottom: 50px;
-  letter-spacing: 4px; }
+  letter-spacing: 0.5px; }
 
 .best__list {
   display: -webkit-box;
