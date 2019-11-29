@@ -542,16 +542,10 @@ button {
 .best__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: justify; }
+  display: flex; }
 
 .best__img {
-  margin-bottom: 30px;
-  display: block;
-  position: relative; }
+  margin-bottom: 30px; }
 
 .best__item {
   text-align: center;
@@ -559,10 +553,10 @@ button {
   flex-basis: 33%; }
 
 .best__subtitle {
+  display: block;
   font-family: lifehack;
   font-size: 24px;
-  margin-bottom: 30px;
-  text-align: center; }
+  margin-bottom: 30px; }
 
 .best__text {
   text-align: center;
