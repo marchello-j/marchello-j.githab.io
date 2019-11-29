@@ -32,3 +32,16 @@
 .promo__img {
   margin: 0 0 60px 15px;
 }
+
+.promo__scroll_btn {
+  width: 29px;
+  height: 15px;
+  background-image: url("../../my_page/img/pageheder/arrow-scroll.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -494,6 +494,20 @@ button {
 .promo__img {
   margin: 0 0 60px 15px; }
 
+.promo__scroll_btn {
+  width: 29px;
+  height: 15px;
+  background-image: url("../../my_page/img/pageheder/arrow-scroll.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
 .btn {
   padding: 12px 15px;
   border-radius: 5px;
@@ -531,10 +545,13 @@ button {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  text-align: justify; }
 
 .best__img {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  display: block;
+  position: relative; }
 
 .best__item {
   text-align: center;
@@ -544,7 +561,8 @@ button {
 .best__subtitle {
   font-family: lifehack;
   font-size: 24px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: center; }
 
 .best__text {
   text-align: center;
@@ -807,3 +825,32 @@ button {
   background-size: cover;
   background-position: center center;
   position: relative; }
+
+.fix__menu {
+  position: fixed;
+  top: 90px;
+  right: 35px;
+  z-index: 2; }
+
+.fix__menu__knob {
+  display: block;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin-bottom: 3px;
+  position: relative; }
+  .fix__menu__knob--active {
+    border-color: #fff; }
+  .fix__menu__knob:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }

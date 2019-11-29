@@ -22,10 +22,13 @@
 .best__list {
   display: flex;
   justify-content: space-between;
+  text-align: justify;
 }
 
 .best__img {
   margin-bottom: 30px;
+  display: block;
+  position: relative;
 }
 
 .best__item {
@@ -37,6 +40,7 @@
   font-family: lifehack;
   font-size: 24px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .best__text {  
