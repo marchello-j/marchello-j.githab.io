@@ -433,7 +433,8 @@ button {
   flex-direction: row; }
 
 .nav__item {
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
   font-style: normal;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -466,12 +467,6 @@ button {
   background-position: center center;
   position: relative; }
 
-.promo__container {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .promo__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,12 +474,11 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-
-.promo__title {
-  margin: 20px 15px; }
+  .promo__content__title {
+    margin: 20px 15px; }
 
 .promo__subtitle {
-  font-family: Lifehack;
+  font-family: 'Lifehack', Helvetica, sans-serif;
   margin-top: 35px;
   font-size: 56px;
   color: #fff;
@@ -510,6 +504,9 @@ button {
 
 .btn {
   padding: 12px 15px;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
+  font-weight: 500;
   border-radius: 5px;
   background-color: #e35028;
   text-transform: uppercase;
@@ -524,9 +521,6 @@ button {
   background-position: center center;
   position: relative; }
 
-.best__content {
-  margin-bottom: 40px; }
-
 .best__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,35 +530,40 @@ button {
   justify-content: center;
   color: #2f3234;
   letter-spacing: 4px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   letter-spacing: 0.5px; }
 
 .best__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
 
 .best__img {
-  margin-bottom: 30px; }
+  margin-bottom: 40px; }
 
 .best__item {
   text-align: center;
-  -ms-flex-preferred-size: 33%;
-  flex-basis: 33%; }
+  margin-bottom: 40px;
+  -ms-flex-preferred-size: 33.3%;
+  flex-basis: 33.3%; }
 
 .best__subtitle {
-  display: block;
-  font-family: lifehack;
+  font-family: 'Lifehack', Helvetica, sans-serif;
   font-size: 24px;
-  margin-bottom: 30px; }
+  font-weight: 500; }
 
 .best__text {
   text-align: center;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.7;
-  color: rgba(47, 50, 52, 0.8); }
+  color: rgba(47, 50, 52, 0.8);
+  margin-top: 15px; }
 
 .dark {
   background-image: url(./my_page/img/pageburg/bg.png);
@@ -615,7 +614,7 @@ button {
 
 .comment__name {
   font-size: 14px;
-  font-family: "Gagalin";
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   color: white;
   text-align: left; }
 
@@ -633,7 +632,8 @@ button {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
   font-size: 14px;
   opacity: 0;
   color: #fff;
@@ -664,14 +664,15 @@ button {
   position: relative; }
 
 .form__container {
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
   margin: 0px auto;
   border-radius: 3px;
   padding: 50px 70px; }
 
 .form__title {
   font-size: 72px;
-  font-family: gagalin;
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
   color: #f9b43b;
   line-height: 1;
   padding: 0;

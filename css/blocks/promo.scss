@@ -5,23 +5,16 @@
   background-position: center center;
   position: relative;
 }
-
-.promo__container {
-   height: 100%;
-   display: flex;
-}
-
 .promo__content {
   display: flex;
   align-items: center;
-}
-
-.promo__title {
+  &__title {
   margin: 20px 15px;
+  }
 }
 
 .promo__subtitle {
-  font-family: Lifehack;
+  @include life;
   margin-top: 35px;
   font-size: 56px;
   color: $white;

@@ -7,7 +7,7 @@
 }
 
 .form__container {
-  font-family: Ubuntu;
+  @include ubuntu;
   margin: 0px auto; 
   border-radius: 3px;
   padding: 50px 70px;
@@ -15,7 +15,7 @@
 
 .form__title {
   font-size: 72px;
-  font-family: gagalin;
+  @include gagalin;
   color: $yellow;
   line-height: 1;
   padding: 0;

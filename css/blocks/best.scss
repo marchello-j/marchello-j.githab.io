@@ -6,44 +6,44 @@
    position: relative;
 }
 
-.best__content {
-  margin-bottom: 40px;  
-}
 
 .best__title {
   display: flex;
   justify-content: center;
   color: $black;
   letter-spacing: 4px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   letter-spacing: 0.5px;
 }
 
 .best__list {
   display: flex;
+  align-items: baseline;
 }
 
 .best__img {
-  margin-bottom: 30px;
+  margin-bottom: 40px; 
 }
 
 .best__item {
   text-align: center;
-  flex-basis: 33%;
+  margin-bottom: 40px;
+  flex-basis: 33.3%;
 }
 
 .best__subtitle {
-  display: block;
-  font-family: lifehack;
+  @include life;
   font-size: 24px;
-  margin-bottom: 30px;
+  font-weight: 500;
+
 }
 
 .best__text {  
   text-align: center;
-  font-family: 'Ubuntu';
+  @include ubuntu;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.7;
   color: rgba(47, 50, 52, 0.8);
+  margin-top: 15px;
 }

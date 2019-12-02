@@ -26,7 +26,7 @@
 
 .comment__name {
     font-size: 14px;
-    font-family: "Gagalin";
+    @include gagalin;
     color: rgb(255, 255, 255);
     text-align: left;
 }
@@ -36,7 +36,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  font-family: Ubuntu;
+  @include ubuntu;
   font-size: 14px;
   opacity: 0;
   color: $white;
