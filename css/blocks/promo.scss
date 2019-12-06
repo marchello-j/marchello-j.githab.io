@@ -4,6 +4,9 @@
   background-size: cover;
   background-position: center center;
   position: relative;
+  .title {
+    color: $yellow;
+  }
 }
 .promo__content {
   display: flex;

@@ -4,4 +4,22 @@
   background-size: cover;
   background-position: center center;
   position: relative;
-}
+
+  &__title {
+    margin-top: 100px;
+  }
+
+  &__container {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(52, 55, 57, .8);
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}  

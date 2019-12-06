@@ -4,41 +4,39 @@
    background-size: cover;
    background-position: center center;
    position: relative;
-}
 
-
-.best__title {
+  &__title {
   display: flex;
   justify-content: center;
   color: $black;
   letter-spacing: 4px;
   margin-bottom: 40px;
   letter-spacing: 0.5px;
-}
+  }
 
-.best__list {
+  &__list {
   display: flex;
   align-items: baseline;
-}
+  }
 
-.best__img {
+  &__img {
   margin-bottom: 40px; 
-}
+  }
 
-.best__item {
+  &__item {
   text-align: center;
   margin-bottom: 40px;
   flex-basis: 33.3%;
-}
+  }
 
-.best__subtitle {
+  &__subtitle {
   @include life;
   font-size: 24px;
   font-weight: 500;
 
-}
+  }
 
-.best__text {  
+  &__text {  
   text-align: center;
   @include ubuntu;
   font-size: 14px;
@@ -46,4 +44,5 @@
   line-height: 1.7;
   color: rgba(47, 50, 52, 0.8);
   margin-top: 15px;
+  }
 }

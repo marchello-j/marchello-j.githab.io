@@ -1,0 +1,106 @@
+.block__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 18%;  
+
+.block__photo {
+  &_pic {
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+    :after {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 100%;
+    }
+}
+
+.block__desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  max-width: 0;
+  overflow: hidden;
+  transition: all .2s ease-out;
+}
+
+.block__name {
+  display: flex;
+  flex-direction: row;
+
+    &_prof {
+      font-size: 14px;
+      @include gagalin;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $yellow;
+      margin-left: 10px;
+    }
+    &_pic {
+      margin-left: 10px;
+    
+      &--active {
+        transform: rotate(180deg);
+        transition: all .2s ease-out;
+        display: block;
+        max-width: 1000px;
+    &__name {
+      color: $white;
+    }
+      }
+    }
+  }
+}
+
+.block__photo {
+  margin: 10px 10px;
+  &_pic {
+    
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    ;
+
+  }
+
+  :after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+}
+.block__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  &_job {
+  font-size: 14px;
+  @include ubuntu;
+  color: $white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  &_desk {
+    font-size: 14px;
+    @include ubuntu;
+    color: $white;
+    font-weight: 300;
+    line-height: 1.714;
+  }
+}
+

@@ -4,4 +4,66 @@
   background-size: cover;
   background-position: center center;
   position: relative;
+  
+  &__block {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    justify-content: space-between;
+    background-image: url(./my_page/img/pagefooter/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__addres {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    text-align: left;
+    @include ubuntu;
+    font-size: 14px;
+    font-weight: 500;
+    color: $white;
+    padding: 10px 0;
+  }
+
+  &__text {
+    padding: 5px 0;
+  }
+
+  &__phone_number{
+    font-weight: bold;
+    color: $orange;
+    padding-left: 10px;
+    text-decoration: none;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+  }
+
+  &__social_list {
+    display: flex;
+    top: 50%;
+  }
+
+  &__social_icon {
+    margin-left: 20px;
+    opacity: .3;
+    transition: .3s;
+      &:hover {
+        opacity: 1;
+      }
+  }
 }
+

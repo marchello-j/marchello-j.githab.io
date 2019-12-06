@@ -5,3 +5,183 @@
   background-position: center center;
   position: relative;
 }
+.title {
+  text-align: center;
+  color: $yellow;
+  margin-bottom: 50px;
+}
+
+
+.order__form {
+  margin-left: -5%;
+}
+
+.order__form-col {
+  float: left;
+  width: 45%;
+  margin-left: 5%;
+}
+
+.order__form-row {
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.order__form-label {
+  margin-bottom: 17px;
+  @include ubuntu;
+  color: $white;
+  font-size: 14px;
+}
+
+.order__form-input {
+  font-size: 14px;
+  padding: 10px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: 100%;
+  &:active{
+    border-radius: 1px solid $yellow;
+  }
+}
+
+.order__form-block {
+  display: block;
+  width: 100%;
+}
+
+.order__form-row_double {
+  margin-left: -20px;
+
+  .order__form-block {
+    width: calc(100% / 2 - 20px);
+    margin-left: 20px;
+  }
+}
+
+.order__form-row_quatro {
+  margin-left: -20px;
+
+  .order__form-block {
+    width: calc(100% / 4 - 20px);
+    margin-left: 20px;
+  }
+}
+
+.order__form-input_textarea {
+  height: 110px;
+  resize: none;
+}
+
+.order__radio {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  margin-right: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.order__radio-elem {
+  position: absolute;
+  top: 0;
+  left: 00px;
+}
+
+.order__radio-fake {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background:$white;
+  vertical-align: middle;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: $red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+  }
+}
+
+.order__radio-elem:checked {
+  & + .order__radio-fake {
+    &:after {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+.order__radio-title {
+  vertical-align: middle;
+  font-size: 14px;
+  color: $white;
+  margin-left: 10px;
+}
+
+.order__radio_checkbox {
+  .order__radio-fake {
+    border-radius: 0px;
+  }
+
+  .order__radio-elem {
+    & + .order__radio-fake {
+      &:after {
+        background: transparent;
+      }
+    }
+  }
+
+  .order__radio-elem:checked {
+    & +.order__radio-fake {
+      &:after {
+        background: url("./my_page/svg/cheked.svg") 50% no-repeat transparent;
+        background-size: cover;
+        width: 11px;
+        height: 9px;
+      }
+    }
+  }
+}
+
+.btn {
+  vertical-align: middle;
+  margin-right: 20px;
+  border: 0;
+  background: $red;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: $white;
+  @include ubuntu;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.order__form-button_reset {
+  vertical-align: middle;
+  margin-right: 20px;
+  border: 0;
+  background: $red;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: $white;
+  @include ubuntu;
+  padding: 10px 15px;
+  cursor: pointer;
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: none;
+  background: transparent;
+}

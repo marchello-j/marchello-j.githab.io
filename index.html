@@ -10,7 +10,9 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <img src="./my_page/img/logo/logo.png" alt="Логотип">
+      <svg class="logo">
+        <use xlink:href="./my_page/svg/sprite.svg#logo"></use>
+      </svg>
       <div class="header__nav">
         <nav>
           <ul class="nav__list">
@@ -37,6 +39,11 @@
             </li>
             <li class="">
               <a href="#" class="btn">заказать</a>
+            </li>
+            <li class="">
+              <a href="#" class="burger__menu">
+                <div class="burger__menu__link"></div>
+              </a>
             </li>
           </ul>
         </nav>
@@ -89,7 +96,9 @@
         <ul class="best__list">
           <li class="best__item">
             <div class="best__img">
-              <img src="./my_page/img/pagetwo/meat.png" alt="Иконка">
+              <svg width="100" height="90">
+                <use xlink:href="./my_page/svg/sprite.svg#meat"></use> 
+              </svg>
             </div>
               <div class="best__deck">
                 <div class="best__subtitle">100% свежее мясо</div>
@@ -100,7 +109,9 @@
           </li>
           <li class="best__item">
             <div class="best__img">
-              <img src="./my_page/img/pagetwo/hand.png" alt="Иконка">
+              <svg width="100" height="90">
+                <use xlink:href="./my_page/svg/sprite.svg#hend"></use>
+              </svg>
             </div>
             <div class="best__deck">
               <div class="best__subtitle">Ручная сборка</div>
@@ -112,7 +123,9 @@
           </li>
           <li class="best__item">
             <div class="best__img">
-              <img src="./my_page/img/pagetwo/natural.png" alt="Иконка">
+              <svg width="100" height="90">
+                <use xlink:href="./my_page/svg/sprite.svg#natural"></use>
+              </svg>
             </div>
             <div class="best__deck">
               <div class="best__subtitle">Натуральные<br>ингридиенты</div>
@@ -129,211 +142,308 @@
     
   </section>
   <section class="section team">
-  
+    <div class="container">
+      <div class="team__container">
+        <p class="title team__title">команда</p>
+        <ul class="team__list">
+          <li class="team__item">
+            <div class="block">
+              <div class="block__container">
+                <div class="block__name ">
+                  <img class="block__name_pic" src="./my_page/img/teamfoto/trangle.svg" alt="">
+                  <p class="block__name_prof">ричард джеймс</p>
+                </div>
+                <div class="block__desc">
+                  <div class="block__photo">
+                    <img class="block__photo_pic" src="./my_page/img/teamfoto/aphex.png" alt="Фотография">
+                  </div>
+                  <div class="block__title">
+                    <h4 class="block__title_job">Оператор</h4>
+                    <p class="block__title_desk">C радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="block">
+              <div class="block__container">
+                <div class="block__name ">
+                  <img class="block__name_pic block__name_pic--active" src="./my_page/img/teamfoto/trangle.svg" alt="">
+                  <p class="block__name_prof">ричард джеймс</p>
+                </div>
+                <div class="block__desc">
+                  <div class="block__photo">
+                    <img class="block__photo_pic" src="./my_page/img/teamfoto/aphex.png" alt="Фотография">
+                  </div>
+                  <div class="block__title">
+                    <h4 class="block__title_job">Оператор</h4>
+                    <p class="block__title_desk">C радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="block">
+              <div class="block__container">
+                <div class="block__name ">
+                  <img class="block__name_pic" src="./my_page/img/teamfoto/trangle.svg" alt="">
+                  <p class="block__name_prof">ричард джеймс</p>
+                </div>
+                <div class="block__desc">
+                  <div class="block__photo">
+                    <img class="block__photo_pic" src="./my_page/img/teamfoto/aphex.png" alt="Фотография">
+                  </div>
+                  <div class="block__title">
+                    <h4 class="block__title_job">Оператор</h4>
+                    <p class="block__title_desk">C радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="block">
+              <div class="block__container">
+                <div class="block__name ">
+                  <img class="block__name_pic" src="./my_page/img/teamfoto/trangle.svg" alt="">
+                  <p class="block__name_prof">ричард джеймс</p>
+                </div>
+                <div class="block__desc">
+                  <div class="block__photo">
+                    <img class="block__photo_pic" src="./my_page/img/teamfoto/aphex.png" alt="Фотография">
+                  </div>
+                  <div class="block__title">
+                    <h4 class="block__title_job">Оператор</h4>
+                    <p class="block__title_desk">C радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
   <section class="section menu">
   
   </section>
   <section class="section comment">
-      <ul class="comment__list">
-        <li class="comment__item">
-          <img class="comment__photo" src="./my_page/img/pagerev/photo1.png" alt="Фотогрфия">
-          <div class="comment__hover">
-            <div class="comment__name">Константин Спилберг</div>
-            <div class="comment__text">
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
-              такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-              </p>
+        <ul class="comment__list">
+          <li class="comment__item">
+            <img class="comment__photo" src="./my_page/img/pagerev/photo1.png" alt="Фотогрфия">
+            <div class="comment__hover">
+              <div class="comment__name">Константин Спилберг</div>
+              <div class="comment__text">
+                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
+                такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <button class="btn" type="button">Подробности</button>
             </div>
-            <button class="btn" type="button">Подробности</button>
-          </div>
-        </li>
-        <div class="comment__item">
-          <img class="comment__photo" src="./my_page/img/pagerev/photo2.png" alt="Фотогрфия">
-          <div class="comment__hover">
-            <div class="comment__name">Константин Спилберг</div>
-            <div class="comment__text">
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
-                могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-              </p>
+          </li>
+          <div class="comment__item">
+            <img class="comment__photo" src="./my_page/img/pagerev/photo2.png" alt="Фотогрфия">
+            <div class="comment__hover">
+              <div class="comment__name">Константин Спилберг</div>
+              <div class="comment__text">
+                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+                  могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <button class="btn" type="button">Подробности</button>
             </div>
-            <button class="btn" type="button">Подробности</button>
           </div>
-        </div>
-        <li class="comment__item">
-          <img class="comment__photo" src="./my_page/img/pagerev/photo3.png" alt="Фотогрфия"><div class="comment__hover">
-            <div class="comment__name">Константин Спилберг</div>
-            <div class="comment__text">
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
-              такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-              </p>
+          <li class="comment__item">
+            <img class="comment__photo" src="./my_page/img/pagerev/photo3.png" alt="Фотогрфия"><div class="comment__hover">
+              <div class="comment__name">Константин Спилберг</div>
+              <div class="comment__text">
+                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
+                такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <button class="btn" type="button">Подробности</button>
             </div>
-            <button class="btn" type="button">Подробности</button>
-          </div>
-        </li>
-        <li class="comment__item">
-          <img class="comment__photo" src="./my_page/img/pagerev/photo4.png" alt="Фотогрфия"><div class="comment__hover">
-            <div class="comment__name">Константин Спилберг</div>
-            <div class="comment__text">
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
-              такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-              </p>
+          </li>
+          <li class="comment__item">
+            <img class="comment__photo" src="./my_page/img/pagerev/photo4.png" alt="Фотогрфия"><div class="comment__hover">
+              <div class="comment__name">Константин Спилберг</div>
+              <div class="comment__text">
+                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
+                такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <button class="btn" type="button">Подробности</button>
             </div>
-            <button class="btn" type="button">Подробности</button>
-          </div>
-        </li>
-        <li class="comment__item">
-          <img class="comment__photo" src="./my_page/img/pagerev/photo5.png" alt="Фотогрфия"><div class="comment__hover">
-            <div class="comment__name">константин спилберг</div>
-            <div class="comment__text">
-              <p>мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
-              такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-              </p>
+          </li>
+          <li class="comment__item">
+            <img class="comment__photo" src="./my_page/img/pagerev/photo5.png" alt="Фотогрфия"><div class="comment__hover">
+              <div class="comment__name">константин спилберг</div>
+              <div class="comment__text">
+                <p>мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
+                такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <button class="btn" type="button">Подробности</button>
             </div>
-            <button class="btn" type="button">Подробности</button>
-          </div>
-        </li>
-        <li class="comment__item">
-          <img class="comment__photo" src="./my_page/img/pagerev/photo6.png" alt="Фотогрфия"><div class="comment__hover">
-            <div class="comment__name">Константин Спилберг</div>
-            <div class="comment__text">
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
-              такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-              </p>
+          </li>
+          <li class="comment__item">
+            <img class="comment__photo" src="./my_page/img/pagerev/photo6.png" alt="Фотогрфия"><div class="comment__hover">
+              <div class="comment__name">Константин Спилберг</div>
+              <div class="comment__text">
+                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
+                такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <button class="btn" type="button">Подробности</button>
             </div>
-            <button class="btn" type="button">Подробности</button>
-          </div>
-        </li>
-        <li class="comment__item">
-          <img class="comment__photo" src="./my_page/img/pagerev/photo7.png" alt="Фотогрфия"><div class="comment__hover">
-            <div class="comment__name">Константин Спилберг</div>
-            <div class="comment__text">
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
-              такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-              </p>
+          </li>
+          <li class="comment__item">
+            <img class="comment__photo" src="./my_page/img/pagerev/photo7.png" alt="Фотогрфия"><div class="comment__hover">
+              <div class="comment__name">Константин Спилберг</div>
+              <div class="comment__text">
+                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
+                такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <button class="btn" type="button">Подробности</button>
             </div>
-            <button class="btn" type="button">Подробности</button>
-          </div>
-        </li>
-        <li class="comment__item">
-          <img class="comment__photo" src="./my_page/img/pagerev/photo8.png" alt="Фотогрфия"><div class="comment__hover">
-            <div class="comment__name">Константин Спилберг</div>
-            <div class="comment__text">
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
-              такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-              </p>
+          </li>
+          <li class="comment__item">
+            <img class="comment__photo" src="./my_page/img/pagerev/photo8.png" alt="Фотогрфия"><div class="comment__hover">
+              <div class="comment__name">Константин Спилберг</div>
+              <div class="comment__text">
+                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть
+                такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <button class="btn" type="button">Подробности</button>
             </div>
-            <button class="btn" type="button">Подробности</button>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
   </section>
   <section class="section work">
   
   </section>
   <section class="section form">
-    <form>
-      <div class="form__container">
-        <h2 class="form__title">Закажите доставку</h2>
-          <div class="form__list">
-            <div class="form__adress">
-              <div class="form__row">
-                <div class="form__name">
-                  <div class="form__col">
-                    <label class="form__label">
-                      <span class="form__label_title">Имя</span>
-                      <input type="text" placeholder="" class="form__input">
-                    </label>
-                  </div>
-                  <div class="form__col">
-                    <label class="form__label">
-                      <span class="form__label_title">Телефон</span>
-                      <input type="text" placeholder="87778777700" class="form__input">
-                    </label>
-                  </div>
-                </div>
-                <div class="form__street">
-                  <div class="form__col">
-                    <label class="form__label">
-                      <span class="form__label_title">Улица</span>
-                      <input type="text" placeholder="" class="form__input">
-                    </label>
-                  </div>
-                </div>
-                <div class="form__namber">
-                  <div class="form__col">
-                    <label class="form__label">
-                      <span class="form__label_title">Дом</span>
-                      <input type="text" placeholder="" class="form__input">
-                    </label>
-                  </div>
-                  <div class="form__col">
-                    <label class="form__label">
-                      <span class="form__label_title">Корпус</span>
-                      <input type="text" placeholder="" class="form__input">
-                    </label>
-                  </div>
-                  <div class="form__col">
-                    <label class="form__label">
-                      <span class="form__label_title">Квартира</span>
-                      <input type="text" placeholder="" class="form__input">
-                    </label>
-                  </div>
-                  <div class="form__col">
-                    <label class="form__label">
-                      <span class="form__label_title">Этаж</span>
-                      <input type="text" placeholder="" class="form__input">
-                    </label>
-                  </div>
-                </div>
-              </div>
+    <div class="container">
+      <div class="title">Закажите доставку</div>
+      <div class="order__form">
+        <form class="order__form-tag" id="order-form">
+          <div class="order__form-col">
+            <div class="order__form-row order__form-row_double">
+              <label class="order__form-block">
+                <div class="order__form-label">Имя</div>
+                <input class="order__form-input" name="name" type="text" placeholder="">
+              </label>
+              <label class="order__form-block">
+                <div class="order__form-label">Телефон</div>
+                <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
+              </label>
             </div>
-            <div class="form__desc">
-              <div class="form__row">
-                <div class="form__col">
-                  <label class="form__label">
-                    <span class="form__label_title">Текст отзыва</span>
-                    <textarea rows="8" cols="125" class="form__input" placeholder="" style="resize: none;"></textarea>
-                  </label>
-                </div>
+            <div class="order__form-row">
+              <label class="order__form-block">
+                <div class="order__form-label">Улица</div>
+                <input class="order__form-input" name="street" type="text" placeholder="">
+              </label>
+            </div>
+            <div class="order__form-row order__form-row_quatro">
+              <label class="order__form-block">
+                <div class="order__form-label">Дом</div>
+                <input class="order__form-input" name="home" type="text" placeholder="">
+              </label>
+              <label class="order__form-block">
+                <div class="order__form-label">Корпус</div>
+                <input class="order__form-input" name="part" type="text" placeholder="">
+              </label>
+              <label class="order__form-block">
+                <div class="order__form-label">Квартира</div>
+                <input class="order__form-input" name="appt" type="text" placeholder="">
+              </label>
+              <label class="order__form-block">
+                <div class="order__form-label">Этаж</div>
+                <input class="order__form-input" name="floor" type="text" placeholder="">
+              </label>
+            </div>
+          </div>
+          <div class="order__form-col">
+            <div class="order__form-row">
+              <label class="order__form-block">
+                <div class="order__form-label">Комментарий</div>
+                <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
+              </label>
+            </div>
+            <div class="order__form-buttons">
+              <div class="order__form-row">
+                <label class="order__radio">
+                  <input class="order__radio-elem" name="payment" type="radio">
+                  <div class="order__radio-fake"></div>
+                  <div class="order__radio-title">Потребуется сдача</div>
+                </label>
+                <label class="order__radio">
+                  <input class="order__radio-elem" name="payment" type="radio">
+                  <div class="order__radio-fake"></div>
+                  <div class="order__radio-title">Оплата по карте</div>
+                </label>
               </div>
-              <div class="form__footer">
-                <div>
-                  <div class="form__label">
-                    <div>
-                      <label class="form__radio">
-                        <input type="radio" class="form__radio_real" name="">
-                        <span class="form__radio_style"></span>
-                        <span class="form__radio_title">Потребуется сдача</span>
-                      </label>
-                      <label class="form__radio">
-                        <input type="radio" class="form__radio_real" name="">
-                        <span class="form__radio_style"></span>
-                        <span class="form__radio_title">Оплата по карте</span>
-                      </label>
-                    </div>
-                    <div class="">
-                      <label class="form__radio">
-                        <input type="checkbox" class="form__radio_real" name="">
-                        <span class="form__radio_style"></span>
-                        <span class="form__radio_title">Не перезванивать</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="form__label">
-                    <button type="submit" class="btn">Отправить</button>
-                  </div>
-                </div>
+              <div class="order__form-row">
+                <label class="order__radio order__radio_checkbox">
+                  <input class="order__radio-elem" name="callback" type="checkbox">
+                  <div class="order__radio-fake"></div>
+                  <div class="order__radio-title">Не перезванивать</div>
+                </label>
+              </div>
+              <div class="order__form-row">
+                <input class="btn" name="" type="submit" value="Заказать">
+                <input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
               </div>
             </div>
           </div>
+        </form>
       </div>
-    </form>
+    </div>
   </section>
   <section class="section footer">
-    
+    <div class="footer__block">
+      <div class="container footer__container">
+        <div class="footer__addres">
+          <div class="footer__text">Санкт-Петербург, ул. Бабашкина, д. 12/1,15</div>
+          <div class="footer__phone">
+            <div class="footer__phone_icon">
+              <svg width="11" height="11">
+                <use xlink:href="./my_page/svg/sprite.svg#phone"></use>
+              </svg>
+              <a class="footer__phone_number" href="tel:+78123771377">+7(812)377-13-77</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__social">
+          <ul class="footer__social_list">
+            <li class="footer__social_icon">
+              <svg width="20" height="20">
+                <use xlink:href="./my_page/svg/sprite.svg#vk"></use>
+              </svg>
+            </li>
+            <li class="footer__social_icon">
+              <svg width="20" height="20">
+                <use xlink:href="./my_page/svg/sprite.svg#fb"></use>
+              </svg>
+            </li>
+            <li class="footer__social_icon">
+              <svg width="20" height="20">
+                <use xlink:href="./my_page/svg/sprite.svg#inst"></use>
+              </svg>
+            </li>
+            <li class="footer__social_icon">
+              <svg width="20" height="20">
+                <use xlink:href="./my_page/svg/sprite.svg#twitter"></use>
+              </svg>
+            </li>
+          </ul>
+        </div> 
+      </div>
+    </div>
   </section>
 </body>
 </html>
