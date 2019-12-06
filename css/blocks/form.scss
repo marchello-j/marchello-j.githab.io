@@ -4,13 +4,13 @@
   background-size: cover;
   background-position: center center;
   position: relative;
-}
-.title {
+
+  &__title {
   text-align: center;
   color: $yellow;
   margin-bottom: 50px;
+  }
 }
-
 
 .order__form {
   margin-left: -5%;

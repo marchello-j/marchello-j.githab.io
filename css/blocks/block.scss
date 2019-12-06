@@ -26,11 +26,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin-left: 25px;
-  max-width: 0;
-  overflow: hidden;
-  transition: all .2s ease-out;
+  display: none;
 }
 
 .block__name {
@@ -42,25 +38,22 @@
       @include gagalin;
       font-weight: bold;
       text-transform: uppercase;
-      color: $yellow;
+      color: $white;
       margin-left: 10px;
     }
     &_pic {
       margin-left: 10px;
-    
-      &--active {
-        transform: rotate(180deg);
-        transition: all .2s ease-out;
-        display: block;
-        max-width: 1000px;
-    &__name {
-      color: $white;
-    }
-      }
     }
   }
 }
 
+.block__name--active .block__name_pic {
+  transform: rotate(180deg);
+  transition: all .2s ease-out;
+  display: block;
+  color: $yellow;
+}
+ 
 .block__photo {
   margin: 10px 10px;
   &_pic {
@@ -86,7 +79,7 @@
 .block__title {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   
   &_job {
   font-size: 14px;
