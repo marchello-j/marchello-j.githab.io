@@ -583,27 +583,95 @@ p {
   background-size: cover;
   background-position: center center;
   position: relative; }
-  .team__title {
-    margin-top: 100px;
-    color: #f9b43b;
-    text-align: center; }
   .team__container {
     position: absolute;
     width: 50%;
     top: 0;
     right: 0;
     bottom: 0;
-    background: rgba(52, 55, 57, 0.8); }
-  .team__list {
+    background: rgba(51, 53, 55, 0.8); }
+  .team__title {
+    color: #f9b43b;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 115px; }
+  .team-acco {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .team-acco__item {
+      margin-top: 35px; }
+    .team-acco__container {
+      margin-left: 100px; }
+      .team-acco__container--active .team-acco__name_icon {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg); }
+      .team-acco__container--active .team-acco__name_prof {
+        color: #f9b43b; }
+      .team-acco__container--active .team-acco__desc {
+        height: 100%; }
+    .team-acco__name {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .team-acco__name_prof {
+        margin-left: 18px;
+        font-family: 'Gagalin', Helvetica, sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px; }
+    .team-acco__desc {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      height: 0;
+      overflow: hidden; }
+      .team-acco__desc_pic {
+        width: 132px;
+        max-width: 132px;
+        height: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        -o-object-fit: cover;
+        object-fit: cover;
+        background-position: center center / no-repeat;
+        margin: 10px 15px; }
+        .team-acco__desc_pic:after {
+          content: '';
+          display: block;
+          width: 100%;
+          padding-top: 100%; }
+    .team-acco__title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      color: #fff;
+      font-family: 'Ubuntu', Helvetica, sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      font-size: 14px; }
+      .team-acco__title_desc {
+        margin-top: 10px; }
 
 .menu {
   background-image: url(./my_page/img/pagemenu/bgmenu.png);
@@ -611,6 +679,73 @@ p {
   background-size: cover;
   background-position: center center;
   position: relative; }
+  .menu__title {
+    top: 110px;
+    left: 94;
+    position: absolute;
+    color: #fff; }
+  .menu-acco {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    list-style: none;
+    display: flex; }
+    .menu-acco__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .menu-acco__item--active .menu-acco__name {
+        color: #f9b43b; }
+      .menu-acco__item--active .menu-acco__content {
+        max-width: 540px;
+        padding: 62px 35px;
+        visibility: visible;
+        opacity: 1; }
+    .menu-acco__name {
+      position: relative;
+      width: 80px;
+      font-family: 'Gagalin', Helvetica, sans-serif;
+      font-size: 40px;
+      color: #fff;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-transform: uppercase; }
+      .menu-acco__name > span {
+        white-space: nowrap;
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+        right: 0;
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        -webkit-transform: rotateZ(-90deg);
+        transform: rotateZ(-90deg);
+        -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0; }
+    .menu-acco__content {
+      background-color: rgba(47, 50, 52, 0.9);
+      color: #fff;
+      font-size: 14px;
+      font-family: 'Ubuntu', Helvetica, sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      max-width: 0;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      -webkit-transition-property: max-width, opacity, visibility;
+      -o-transition-property: max-width, opacity, visibility;
+      transition-property: max-width, opacity, visibility; }
 
 .comment__list {
   display: -webkit-box;
@@ -640,7 +775,7 @@ p {
 
 .comment__name {
   font-size: 14px;
-  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  font-family: 'Gagalin', Helvetica, sans-serif;
   color: white;
   text-align: left; }
 
@@ -972,112 +1107,3 @@ p {
 
 .burger__menu__link:after {
   bottom: 0; }
-
-.block__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0 18%; }
-  .block__container .block__photo_pic {
-    width: 100px;
-    max-width: 100px;
-    height: 100px;
-    min-height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    -o-object-fit: cover;
-    object-fit: cover; }
-  .block__container .block__photo :after {
-    content: '';
-    display: block;
-    width: 100%;
-    padding-top: 100%; }
-  .block__container .block__desc {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    display: none; }
-  .block__container .block__name {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row; }
-    .block__container .block__name_prof {
-      font-size: 14px;
-      font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #fff;
-      margin-left: 10px; }
-    .block__container .block__name_pic {
-      margin-left: 10px; }
-
-.block__name--active .block__name_pic {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  -webkit-transition: all .2s ease-out;
-  -o-transition: all .2s ease-out;
-  transition: all .2s ease-out;
-  display: block;
-  color: #f9b43b; }
-
-.block__photo {
-  margin: 10px 10px; }
-  .block__photo_pic {
-    width: 100px;
-    max-width: 100px;
-    height: 100px;
-    min-height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    -o-object-fit: cover;
-    object-fit: cover; }
-  .block__photo :after {
-    content: '';
-    display: block;
-    width: 100%;
-    padding-top: 100%; }
-
-.block__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly; }
-  .block__title_job {
-    font-size: 14px;
-    font-family: 'Ubuntu', Helvetica, sans-serif;
-    font-weight: 300;
-    color: #fff;
-    font-weight: bold;
-    margin-bottom: 10px; }
-  .block__title_desk {
-    font-size: 14px;
-    font-family: 'Ubuntu', Helvetica, sans-serif;
-    font-weight: 300;
-    color: #fff;
-    font-weight: 300;
-    line-height: 1.714; }

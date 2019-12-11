@@ -4,4 +4,68 @@
   background-size: cover;
   background-position: center center;
   position: relative;
+  
+  
+  &__title {
+    top: 110px;
+    left: 94;
+    position: absolute;
+    color: $white;
+  }
+  &-acco {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    &__item {
+      display: flex;
+      &--active .menu-acco__name {
+        color: $yellow;
+      }
+      &--active .menu-acco__content {
+        max-width: 540px;
+        padding: 62px 35px;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    &__name {
+      position: relative;
+      width: 80px;
+      @include gagalin;
+      font-size: 40px;
+      color: $white;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-transform: uppercase;
+
+      &>span {
+        white-space: nowrap;
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+        right: 0;
+        transform: rotate(-90deg);
+        transform: rotateZ(-90deg);
+        transform-origin: 0 0;
+      }
+    }
+    &__content {
+      background-color: rgba(47, 50, 52, .9);
+      color: $white;
+      font-size: 14px;
+      @include ubuntu;
+      line-height: 1.7;
+      max-width: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: 1s;
+      transition-property: max-width, opacity, visibility;
+    }
+  }
 }
