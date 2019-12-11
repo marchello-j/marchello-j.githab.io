@@ -25,7 +25,7 @@
 }
 
 .comment__name {
-    font-size: 14px;
+    font-size: rem(14px);
     @include gagalin;
     color: rgb(255, 255, 255);
     text-align: left;
@@ -37,7 +37,7 @@
   justify-content: space-between;
   align-items: flex-start;
   @include ubuntu;
-  font-size: 14px;
+  font-size: rem(14px);
   opacity: 0;
   color: $white;
   position: absolute;
@@ -47,6 +47,6 @@
   right: 0;
   line-height: 1.714;
   background-color: rgba($black, 0.3);
-  padding: 50px 20px;
+  padding: rem(50px) rem(20px);
   transition: opacity .4s;
 }

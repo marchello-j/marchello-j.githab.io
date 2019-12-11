@@ -8,7 +8,7 @@
   &__title {
   text-align: center;
   color: $yellow;
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
   }
 }
 
@@ -23,26 +23,26 @@
 }
 
 .order__form-row {
-  margin-bottom: 16px;
+  margin-bottom: rem(16px);
   display: flex;
 }
 
 .order__form-label {
-  margin-bottom: 17px;
+  margin-bottom: rem(17px);
   @include ubuntu;
   color: $white;
-  font-size: 14px;
+  font-size: rem(14px);
 }
 
 .order__form-input {
-  font-size: 14px;
-  padding: 10px;
-  padding: 5px 10px;
-  border: 1px solid transparent;
-  border-radius: 5px;
+  font-size: rem(14px);
+  padding: rem(10px);
+  padding: rem(5px) rem(10px);
+  border: rem(1px) solid transparent;
+  border-radius: rem(5px);
   width: 100%;
   &:active {
-    border-radius: 1px solid $yellow;
+    border-radius: rem(1px) solid $yellow;
   }
 }
 
@@ -52,25 +52,25 @@
 }
 
 .order__form-row_double {
-  margin-left: -20px;
+  margin-left: rem(-20px);
 
   .order__form-block {
     width: calc(100% / 2 - 20px);
-    margin-left: 20px;
+    margin-left: rem(20px);
   }
 }
 
 .order__form-row_quatro {
-  margin-left: -20px;
+  margin-left: rem(-20px);
 
   .order__form-block {
     width: calc(100% / 4 - 20px);
-    margin-left: 20px;
+    margin-left: rem(20px);
   }
 }
 
 .order__form-input_textarea {
-  height: 110px;
+  height: rem(110px);
   resize: none;
 }
 
@@ -79,7 +79,7 @@
   display: flex;
   flex-direction: row;
   white-space: nowrap;
-  margin-right: 20px;
+  margin-right: rem(20px);
   vertical-align: middle;
   cursor: pointer;
 }
@@ -87,12 +87,12 @@
 .order__radio-elem {
   position: absolute;
   top: 0;
-  left: 00px;
+  left: rem(00px);
 }
 
 .order__radio-fake {
-  width: 16px;
-  height: 16px;
+  width: rem(16px);
+  height: rem(16px);
   border-radius: 50%;
   background:$white;
   vertical-align: middle;
@@ -102,8 +102,8 @@
     content: "";
     display: block;
     position: absolute;
-    width: 0px;
-    height: 0px;
+    width: rem(0px);
+    height: rem(0px);
     border-radius: 50%;
     background: $red;
     top: 50%;
@@ -116,22 +116,22 @@
 .order__radio-elem:checked {
   & + .order__radio-fake {
     &:after {
-      width: 8px;
-      height: 8px;
+      width: rem(8px);
+      height: rem(8px);
     }
   }
 }
 
 .order__radio-title {
   vertical-align: middle;
-  font-size: 14px;
+  font-size: rem(14px);
   color: $white;
-  margin-left: 10px;
+  margin-left: rem(10px);
 }
 
 .order__radio_checkbox {
   .order__radio-fake {
-    border-radius: 0px;
+    border-radius: rem(0px);
   }
 
   .order__radio-elem {
@@ -147,8 +147,8 @@
       &:after {
         background: url("./my_page/svg/cheked.svg") 50% no-repeat transparent;
         background-size: cover;
-        width: 11px;
-        height: 9px;
+        width: rem(11px);
+        height: rem(9px);
       }
     }
   }
@@ -156,29 +156,29 @@
 
 .btn {
   vertical-align: middle;
-  margin-right: 20px;
+  margin-right: rem(20px);
   border: 0;
   background: $red;
-  font-size: 13px;
+  font-size: rem(13px);
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: rem(5px);
   color: $white;
   @include ubuntu;
-  padding: 10px 15px;
+  padding: rem(10px) rem(15px);
   cursor: pointer;
 }
 
 .order__form-button_reset {
   vertical-align: middle;
-  margin-right: 20px;
+  margin-right: rem(20px);
   border: 0;
   background: $red;
-  font-size: 13px;
+  font-size: rem(13px);
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: rem(5px);
   color: $white;
   @include ubuntu;
-  padding: 10px 15px;
+  padding: rem(10px) rem(15px);
   cursor: pointer;
   padding-left: 0;
   padding-right: 0;

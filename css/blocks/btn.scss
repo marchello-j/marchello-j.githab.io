@@ -1,13 +1,13 @@
 .btn {
-  padding: 12px 15px;
+  padding: rem(12px) rem(15px);
   @include ubuntu;
   font-weight: 500;
-  border-radius: 5px;
+  border-radius: rem(5px);
   background-color: $red;
   text-transform: uppercase;
   text-decoration: none;
   color: $white;
-  font-size: 13px;
+  font-size: rem(13px);
   &:hover {
     background: #c1401e;
   }

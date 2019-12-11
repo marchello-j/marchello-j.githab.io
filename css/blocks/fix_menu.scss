@@ -1,17 +1,17 @@
 .fix__menu {
   position: fixed;
-  top: 90px;
-  right: 35px;
+  top: rem(90px);
+  right: rem(35px);
   z-index: 2;
 }
 
 .fix__menu__knob {
   display: block;
-  height: 18px;
-  width: 18px;
+  height: rem(18px);
+  width: rem(18px);
   border-radius: 50%;
-  border: 1px solid transparent;
-  margin-bottom: 3px;
+  border: rem(1px) solid transparent;
+  margin-bottom: rem(3px);
   position: relative;
 
   &--active {
@@ -20,8 +20,8 @@
 
   &:before {
     content: '';
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     background-color: $white;
     border-radius: 50%;
     position: absolute;

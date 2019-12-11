@@ -9,9 +9,9 @@
   display: flex;
   justify-content: center;
   color: $black;
-  letter-spacing: 4px;
-  margin-bottom: 40px;
-  letter-spacing: 0.5px;
+  letter-spacing: rem(4px);
+  margin-bottom: rem(40px);
+  letter-spacing: 0rem(5px);
   }
 
   &__list {
@@ -20,18 +20,18 @@
   }
 
   &__img {
-  margin-bottom: 40px; 
+  margin-bottom: rem(40px); 
   }
 
   &__item {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: rem(40px);
   flex-basis: 33.3%;
   }
 
   &__subtitle {
   @include life;
-  font-size: 24px;
+  font-size: rem(24px);
   font-weight: 500;
 
   }
@@ -39,10 +39,10 @@
   &__text {  
   text-align: center;
   @include ubuntu;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
   line-height: 1.7;
   color: rgba(47, 50, 52, 0.8);
-  margin-top: 15px;
+  margin-top: rem(15px);
   }
 }

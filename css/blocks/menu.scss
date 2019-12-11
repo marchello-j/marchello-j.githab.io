@@ -7,7 +7,7 @@
   
   
   &__title {
-    top: 110px;
+    top: rem(110px);
     left: 94;
     position: absolute;
     color: $white;
@@ -27,17 +27,17 @@
         color: $yellow;
       }
       &--active .menu-acco__content {
-        max-width: 540px;
-        padding: 62px 35px;
+        max-width: rem(540px);
+        padding: rem(62px) rem(35px);
         visibility: visible;
         opacity: 1;
       }
     }
     &__name {
       position: relative;
-      width: 80px;
+      width: rem(80px);
       @include gagalin;
-      font-size: 40px;
+      font-size: rem(40px);
       color: $white;
       background-position: center center;
       background-repeat: no-repeat;
@@ -47,7 +47,7 @@
       &>span {
         white-space: nowrap;
         position: absolute;
-        left: 15px;
+        left: rem(15px);
         bottom: 0;
         right: 0;
         transform: rotate(-90deg);
@@ -58,7 +58,7 @@
     &__content {
       background-color: rgba(47, 50, 52, .9);
       color: $white;
-      font-size: 14px;
+      font-size: rem(14px);
       @include ubuntu;
       line-height: 1.7;
       max-width: 0;

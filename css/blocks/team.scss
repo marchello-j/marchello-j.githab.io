@@ -17,16 +17,16 @@
     color: $yellow;
     display: flex;
     justify-content: center;
-    margin-top: 115px;
+    margin-top: rem(115px);
   }
   &-acco {
     display: flex;
     justify-content: center;
     &__item {
-      margin-top: 35px;
+      margin-top: rem(35px);
     }
     &__container {
-      margin-left: 100px;
+      margin-left: rem(100px);
       &--active {
         .team-acco__name_icon {
         transform: rotate(180deg);
@@ -44,11 +44,11 @@
       &_icon {
       }
       &_prof {
-        margin-left: 18px;
+        margin-left: rem(18px);
         @include gagalin;
         color: $white;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: rem(14px);
       }
     }
     &__desc {
@@ -58,15 +58,15 @@
       height: 0;
       overflow: hidden;
       &_pic {
-        width: 132px;
-        max-width: 132px;
-        height: 100px;
-        max-height: 100px;
+        width: rem(132px);
+        max-width: rem(132px);
+        height: rem(100px);
+        max-height: rem(100px);
         border-radius: 50%;
         overflow: hidden;
         object-fit: cover;
         background-position: center center / no-repeat;
-        margin: 10px 15px;
+        margin: rem(10px) rem(15px);
         &:after {
           content: '';
           display: block;
@@ -81,9 +81,9 @@
       color: $white;
       @include ubuntu;
       line-height: 1.7;
-      font-size: 14px;
+      font-size: rem(14px);
       &_desc {
-        margin-top: 10px;
+        margin-top: rem(10px);
       }
     }
   }

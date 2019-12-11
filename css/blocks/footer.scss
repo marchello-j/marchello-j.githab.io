@@ -28,20 +28,20 @@
     justify-content: space-between;    
     text-align: left;
     @include ubuntu;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 500;
     color: $white;
-    padding: 10px 0;
+    padding: rem(10px) 0;
   }
 
   &__text {
-    padding: 5px 0;
+    padding: rem(5px) 0;
   }
 
   &__phone_number{
     font-weight: bold;
     color: $orange;
-    padding-left: 10px;
+    padding-left: rem(10px);
     text-decoration: none;
   }
 
@@ -58,7 +58,7 @@
   }
 
   &__social_icon {
-    margin-left: 20px;
+    margin-left: rem(20px);
     opacity: .3;
     transition: .3s;
       &:hover {
