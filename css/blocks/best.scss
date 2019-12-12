@@ -17,22 +17,38 @@
   &__list {
   display: flex;
   align-items: baseline;
+     @include phones {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__img {
   margin-bottom: rem(40px); 
+    @include phones {
+      margin-left: rem(10px);
+    }
   }
 
   &__item {
   text-align: center;
   margin-bottom: rem(40px);
   flex-basis: 33.3%;
+    @include phones {
+      display: flex;
+      flex-direction: row;
+      text-align: start;
+      margin-bottom: 0;
+    }
   }
 
   &__subtitle {
   @include life;
   font-size: rem(24px);
   font-weight: 500;
+    @include phones {
+      margin-left: rem(10px);
+    }
 
   }
 
@@ -44,5 +60,11 @@
   line-height: 1.7;
   color: rgba(47, 50, 52, 0.8);
   margin-top: rem(15px);
+    @include phones {
+      display: flex;
+      flex-direction: row;
+      text-align: start;
+      margin-left: rem(10px);
+    }
   }
 }

@@ -12,37 +12,66 @@
     right: 0;
     bottom: 0;
     background: rgba(51, 53, 55, .8);
+    @include tablets {
+      width: 100%;
+    }
   }
+  
   &__title {
     color: $yellow;
     display: flex;
     justify-content: center;
     margin-top: rem(115px);
   }
+  
   &-acco {
     display: flex;
     justify-content: center;
+    
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+    
     &__item {
       margin-top: rem(35px);
+
     }
+    
     &__container {
       margin-left: rem(100px);
+      
+      @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        margin: 0;
+      }
+      
       &--active {
+        
         .team-acco__name_icon {
         transform: rotate(180deg);
         }
+        
         .team-acco__name_prof {
           color: $yellow;
         }
+        
         .team-acco__desc {
           height: 100%;
         }
       }
     }
+    
     &__name {
-      display: flex;
-      &_icon {
-      }
+      display: flex;       
+             
       &_prof {
         margin-left: rem(18px);
         @include gagalin;
@@ -51,12 +80,18 @@
         font-size: rem(14px);
       }
     }
+    
     &__desc {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       height: 0;
       overflow: hidden;
+      @include tablets {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
       &_pic {
         width: rem(132px);
         max-width: rem(132px);

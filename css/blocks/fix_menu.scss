@@ -3,6 +3,9 @@
   top: rem(90px);
   right: rem(35px);
   z-index: 2;
+  @include tablets {
+    display: none;
+  }
 }
 
 .fix__menu__knob {

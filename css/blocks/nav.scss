@@ -2,6 +2,13 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  
+  @include tablets {
+    display: none;
+  &:nth-of-type(7) {
+    display: block;
+  }
+  }
 }
 
 .nav__item {

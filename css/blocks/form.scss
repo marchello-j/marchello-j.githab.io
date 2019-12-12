@@ -12,8 +12,20 @@
   }
 }
 
+.order__form-tag {
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .order__form {
   margin-left: -5%;
+  @include tablets {
+    margin: 0;
+  }
 }
 
 .order__form-col {

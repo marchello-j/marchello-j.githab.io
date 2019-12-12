@@ -1,6 +1,13 @@
 html {
   font-size: 16px;
 
+  @include tablets {
+    font-size: 14px;
+  }
+
+  @include phones {
+    font-size: 12px;
+  }
 
 }
 
@@ -20,11 +27,12 @@ html {
 .container {
   width: 95%;
   margin: 0 auto;
+  max-width: rem(960px);
 }
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +40,7 @@ html {
 
 .title {
   font-family: Gagalin;
-  font-size: 72px;
+  font-size: rem(72px);
   line-height: 1;
 }
 

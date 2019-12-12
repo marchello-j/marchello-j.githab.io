@@ -4,13 +4,22 @@
   background-size: cover;
   background-position: center center;
   position: relative;
+  object-fit: cover;
   &__title {
     color: $yellow;
-  }
 }
 .promo__content {
   display: flex;
   align-items: center;
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include phones {
+    margin-top: 0;
+  }
+
   &__title {
   margin: rem(20px) rem(15px);
   }
@@ -23,10 +32,24 @@
   color: $white;
   line-height: 1;
   letter-spacing: rem(3px);
+    @include tablets {
+      text-align: center;
+      margin-top: 0;
+    }
+    
 }
 
 .promo__img {
+  width: 44%;
   margin: 0 0 rem(60px) rem(15px);
+  @include tablets {
+    margin: 0;
+    width: 50%;
+  }
+  @include phones {
+    width: 65%;
+    margin-bottom: rem(30px);
+  }
 }
 
 .promo__scroll_btn {
@@ -40,4 +63,5 @@
   bottom: rem(30px);
   left: 50%;
   transform: translateX(-50%);
+  }
 }

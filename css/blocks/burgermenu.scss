@@ -1,10 +1,12 @@
 .burger__menu {
-  vertical-align: middle;
   position: relative;
-  height: rem(22px);
+  height: rem(28px);
   align-items: center;
-  margin-left: rem(30px);
   display: none;
+  margin: rem(0px) rem(10px) rem(0px) rem(0px);
+    @include tablets {
+      display: flex;
+    }
 }
 
 .burger__menu__link {
