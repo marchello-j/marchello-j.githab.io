@@ -8,10 +8,13 @@
   
   &__title {
     top: rem(110px);
-    left: 94;
+    left: rem(94px);
     position: absolute;
     color: $white;
-  }
+      @include phones {
+      text-align: center;
+      }
+    }
   &-acco {
     position: absolute;
     right: 0;

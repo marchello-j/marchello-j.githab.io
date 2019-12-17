@@ -5,27 +5,182 @@
   background-position: center center;
   position: relative;
 
-  &__title {
-  text-align: center;
-  color: $yellow;
-  margin-bottom: rem(50px);
-  }
-}
-
-.order__form-tag {
-  @include tablets {
+  .form {
     display: flex;
-  margin-bottom: rem(15px);
-}
+    flex-direction: row;
+    @include tablets {
+      display: flex;
+      width: 60%;
+      
+      align-items: center;
+      flex-direction: column;
+      margin-left: 20%;
+    }
+    @include phones {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+    }
+  }
 
+  &__title {
+    text-align: center;
+    color: $yellow;
+    margin-bottom: rem(50px);
+  }
+  
+  &__row {
+    display: flex;
+    margin-bottom: rem(12px);
+    margin-right: rem(-20px);
+  }
 
-.order__form-col {
-  float: left;
-  width: 45%;
-  margin-left: 5%;
-}
+  &__col {
+    flex: 1;
+    &:first-child {
+      margin-left: rem(-20px);
+    }
+  }
 
-  &:first-child {
-    margin-left: 0;
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-left: rem(20px);
+      &_title {
+        font-size: rem(14px);
+        color: $white;
+        @include ubuntu;
+        margin-bottom: rem(10px);
+      }
+      & textarea {
+        resize: none;
+      } 
+  }
+  
+  &__input {
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: rem(14px);
+    padding: rem(10px) rem(20px);
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border: rem(2px) solid transparent;
+    width: 100%;
+      &:focus {
+        border: rem(2px) solid $yellow;
+      }
+  }
+  &__comment {
+    width: 100%;
+    margin: 0 rem(20px) 0 rem(40px);
+    @include tablets {
+      margin: 0;
+    }
+    @include phones {
+      text-align: center;
+    }
+  }
+  
+  &__radio {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: rem(5px);
+    margin-right: rem(20px);
+    white-space: nowrap;
+    @include ubuntu;
+    color: $white;
+        &_real {
+        width: rem(10px);
+        height: rem(10px);
+        margin: 0 rem(-10px) rem(-10px) 0;
+        opacity: 0;
+        &:checked ~ .form__radio_style {
+          border: rem(1px) solid $red;
+          background-image: linear-gradient(180deg), rgb(237, 237, 237) 0%, rgb(255, 255, 255) 0%;
+          &::after {
+            opacity: 1;
+          }
+        }
+    }
+    &_style {
+      display: inline-block;
+      width: rem(20px);
+      height: rem(20px);
+      line-height: rem(20px);
+      margin-right: rem(10px);
+      border-radius: 50%;
+      border: rem(1px) solid $red;
+      background-image: linear-gradient(180deg), rgb(237, 237, 237) 0%, rgb(255, 255, 255) 0%;
+      position: relative;
+      vertical-align: middle;
+      &::after {
+        content: '';
+        width: rem(8px);
+        height: rem(8px);
+        display: block;
+        background: $red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        opacity: 0;
+      }
+    }
+      &_check {
+      display: inline-block;
+      width: rem(10px);
+      height: rem(10px);
+      margin: 0 rem(-10px) rem(-10px) 0;
+      opacity: 0;
+        &:checked~.form__radio_style-check {
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+      &_style-check {
+        display: inline-block;
+        width: rem(20px);
+        height: rem(20px);
+        line-height: rem(20px);
+        margin-right: rem(10px);
+        background-color: $white;
+        position: relative;
+        vertical-align: middle;
+
+        &::after {
+          content: '';
+          width: rem(10px);
+          height: rem(10px);
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+          background-image: url(./my_page/svg/cheked.svg.png) center center / no-repeat cover;
+        }
+      }
+  }
+  &__footer {
+    margin-top: 20px;
+  }
+  &__btn {
+    border: inherit;
+    &_reset {
+      margin-left: rem(10px);
+      @include ubuntu;
+      color: $white;
+      background: transparent;
+      border: transparent;
+      &:focus {
+        border: transparent;
+      }
+    }
   }
 }
