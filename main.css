@@ -435,32 +435,6 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .header__burger__menu {
-    position: relative;
-    height: 1.75rem;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: none;
-    margin: 0rem 0.625rem 0rem 0rem; }
-    @media screen and (max-width: 768px) {
-      .header__burger__menu {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; } }
-    .header__burger__menu__link, .header__burger__menu__link:before, .header__burger__menu__link:after {
-      background: #fff;
-      width: 1.5rem;
-      height: 0.25rem;
-      border-radius: 0.1875rem; }
-    .header__burger__menu__link:before, .header__burger__menu__link:after {
-      content: "";
-      display: block;
-      position: absolute; }
-    .header__burger__menu__link:before {
-      top: 0; }
-    .header__burger__menu__link:after {
-      bottom: 0; }
 
 .header__container {
   display: -webkit-box;
@@ -472,14 +446,22 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .header__container__order {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row; }
+  @media screen and (max-width: 768px) {
+    .header__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+
+@media screen and (max-width: 768px) {
+  .header__order__btn {
+    margin-right: 5rem; } }
 
 .nav__list {
   display: -webkit-box;
@@ -1341,13 +1323,15 @@ p {
   -ms-flex-align: center;
   align-items: center;
   display: none;
+  cursor: pointer;
   margin: 0rem 0.625rem 0rem 0rem; }
   @media screen and (max-width: 768px) {
     .burger__menu {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin-left: 1.25rem; } }
+      margin-left: 1.25rem;
+      position: fixed; } }
 
 .burger__menu__link, .burger__menu__link:before, .burger__menu__link:after {
   background: #fff;

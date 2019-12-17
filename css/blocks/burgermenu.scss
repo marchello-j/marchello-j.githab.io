@@ -3,10 +3,12 @@
   height: rem(28px);
   align-items: center;
   display: none;
+  cursor: pointer;
   margin: rem(0px) rem(10px) rem(0px) rem(0px);
     @include tablets {
       display: flex;
       margin-left: rem(20px);
+      position: fixed;
     }
 }
 
