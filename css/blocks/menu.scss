@@ -12,7 +12,7 @@
     position: absolute;
     color: $white;
       @include phones {
-      text-align: center;
+        left: 10%;
       }
     }
   &-acco {

@@ -835,7 +835,7 @@ p {
     color: #fff; }
     @media screen and (max-width: 480px) {
       .menu__title {
-        text-align: center; } }
+        left: 10%; } }
   .menu-acco {
     position: absolute;
     right: 0;
@@ -1019,7 +1019,7 @@ p {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: 100%;
+        width: 95%;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
@@ -1136,6 +1136,18 @@ p {
         transform: translate(-50%, -50%);
         border-radius: 50%;
         opacity: 0; }
+    .form__radio__checkbox {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 0.9375rem;
+      margin-right: 1.25rem;
+      white-space: nowrap;
+      font-family: 'Ubuntu', Helvetica, sans-serif;
+      font-weight: 300;
+      color: #fff; }
     .form__radio_check {
       display: inline-block;
       width: 0.625rem;
@@ -1148,7 +1160,6 @@ p {
       display: inline-block;
       width: 1.25rem;
       height: 1.25rem;
-      line-height: 1.25rem;
       margin-right: 0.625rem;
       background-color: #fff;
       position: relative;
@@ -1164,8 +1175,17 @@ p {
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        opacity: 0;
-        background-image: url(./my_page/svg/cheked.svg.png) center center/no-repeat cover; }
+        left: 3px;
+        top: 4px;
+        width: 10px;
+        height: 5px;
+        border-radius: 1px;
+        border-left: 4px solid #e35028;
+        border-bottom: 4px solid #e35028;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        opacity: 0; }
   .form__footer {
     margin-top: 20px; }
   .form__btn {
@@ -1179,6 +1199,8 @@ p {
       border: transparent; }
       .form__btn_reset:focus {
         border: transparent; }
+  .form__label > textarea {
+    resize: none; }
 
 .footer {
   background-image: url(./my_page/img/pagefooter/bgfooter.png);

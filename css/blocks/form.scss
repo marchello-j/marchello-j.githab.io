@@ -18,7 +18,7 @@
     }
     @include phones {
       display: flex;
-      width: 100%;
+      width: 95%;
       align-items: center;
       flex-direction: column;
       margin: 0;
@@ -131,6 +131,15 @@
         opacity: 0;
       }
     }
+    &__checkbox {
+      display: inline-flex;
+      flex-wrap: wrap;
+      margin-top: rem(15px);
+      margin-right: rem(20px);
+      white-space: nowrap;
+      @include ubuntu;
+      color: $white;
+    }
       &_check {
       display: inline-block;
       width: rem(10px);
@@ -147,7 +156,6 @@
         display: inline-block;
         width: rem(20px);
         height: rem(20px);
-        line-height: rem(20px);
         margin-right: rem(10px);
         background-color: $white;
         position: relative;
@@ -162,8 +170,15 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          left: 3px;
+          top: 4px;
+          width: 10px;
+          height: 5px;
+          border-radius: 1px;
+          border-left: 4px solid $red;
+          border-bottom: 4px solid $red;
+          transform: rotate(-45deg);
           opacity: 0;
-          background-image: url(./my_page/svg/cheked.svg.png) center center / no-repeat cover;
         }
       }
   }
@@ -182,5 +197,8 @@
         border: transparent;
       }
     }
+  }
+  &__label>textarea {
+    resize: none;
   }
 }
