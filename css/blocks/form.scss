@@ -170,20 +170,20 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          left: 3px;
-          top: 4px;
-          width: 10px;
-          height: 5px;
-          border-radius: 1px;
-          border-left: 4px solid $red;
-          border-bottom: 4px solid $red;
+          left: rem(3px);
+          top: rem(4px);
+          width: rem(10px);
+          height: rem(5px);
+          border-radius: rem(1px);
+          border-left: rem(4px) solid $red;
+          border-bottom: rem(4px) solid $red;
           transform: rotate(-45deg);
           opacity: 0;
         }
       }
   }
   &__footer {
-    margin-top: 20px;
+    margin-top: rem(20px);
   }
   &__btn {
     border: inherit;

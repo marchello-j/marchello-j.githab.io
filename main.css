@@ -1175,19 +1175,19 @@ p {
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        left: 3px;
-        top: 4px;
-        width: 10px;
-        height: 5px;
-        border-radius: 1px;
-        border-left: 4px solid #e35028;
-        border-bottom: 4px solid #e35028;
+        left: 0.1875rem;
+        top: 0.25rem;
+        width: 0.625rem;
+        height: 0.3125rem;
+        border-radius: 0.0625rem;
+        border-left: 0.25rem solid #e35028;
+        border-bottom: 0.25rem solid #e35028;
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
         opacity: 0; }
   .form__footer {
-    margin-top: 20px; }
+    margin-top: 1.25rem; }
   .form__btn {
     border: inherit; }
     .form__btn_reset {
