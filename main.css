@@ -1062,7 +1062,7 @@ p {
     .form__label textarea {
       resize: none; }
   .form__input {
-    border-radius: 6px;
+    border-radius: 0.375rem;
     background-color: #fff;
     font-size: 0.875rem;
     padding: 0.625rem 1.25rem;
@@ -1082,7 +1082,8 @@ p {
         margin: 0; } }
     @media screen and (max-width: 480px) {
       .form__comment {
-        text-align: center; } }
+        text-align: center;
+        margin: 0 auto; } }
   .form__radio {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1101,11 +1102,7 @@ p {
       margin: 0 -0.625rem -0.625rem 0;
       opacity: 0; }
       .form__radio_real:checked ~ .form__radio_style {
-        border: 0.0625rem solid #e35028;
-        background-image: -webkit-gradient(linear, left top, left bottom, ), #ededed 0%, white 0%;
-        background-image: -webkit-linear-gradient(top), #ededed 0%, white 0%;
-        background-image: -o-linear-gradient(top), #ededed 0%, white 0%;
-        background-image: linear-gradient(180deg), #ededed 0%, white 0%; }
+        border: 0.0625rem solid #e35028; }
         .form__radio_real:checked ~ .form__radio_style::after {
           opacity: 1; }
     .form__radio_style {
@@ -1116,10 +1113,6 @@ p {
       margin-right: 0.625rem;
       border-radius: 50%;
       border: 0.0625rem solid #e35028;
-      background-image: -webkit-gradient(linear, left top, left bottom, ), #ededed 0%, white 0%;
-      background-image: -webkit-linear-gradient(top), #ededed 0%, white 0%;
-      background-image: -o-linear-gradient(top), #ededed 0%, white 0%;
-      background-image: linear-gradient(180deg), #ededed 0%, white 0%;
       position: relative;
       vertical-align: middle; }
       .form__radio_style::after {
@@ -1166,8 +1159,6 @@ p {
       vertical-align: middle; }
       .form__radio_style-check::after {
         content: '';
-        width: 0.625rem;
-        height: 0.625rem;
         display: block;
         position: absolute;
         top: 50%;
@@ -1199,8 +1190,6 @@ p {
       border: transparent; }
       .form__btn_reset:focus {
         border: transparent; }
-  .form__label > textarea {
-    resize: none; }
 
 .footer {
   background-image: url(./my_page/img/pagefooter/bgfooter.png);
