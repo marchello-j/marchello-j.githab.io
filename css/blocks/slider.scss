@@ -1,0 +1,94 @@
+.slider {
+  background-image: url(./my_page/img/pageburg/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__left {
+    width: rem(29px);
+    height: rem(15px);
+    background-image: url("./my_page/img/pageheder/arrow-scroll.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    left: 5%;
+    bottom: 50%;
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
+
+  &__right {
+    width: rem(29px);
+    height: rem(15px);
+    background-image: url("./my_page/img/pageheder/arrow-scroll.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    right: 5%;
+    bottom: 50%;
+    transform: rotate(-90deg);
+    cursor: pointer;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__drop {
+      margin: 0 0 rem(-15px) rem(30px);
+      cursor: pointer;
+      &:hover {
+        background: $red;
+        border-radius: 10px;
+      }
+    }
+
+    &__icon {
+      margin-left: rem(30px);
+      margin-top: rem(-25px);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: $white;
+
+    & p {
+      font-size: 14px;
+      @include ubuntu;
+      line-height: 1.714;
+    }
+  }
+  &__prise {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    &_title {
+      @include gagalin;
+      font-size: 72px;
+      color: $red;
+      margin-right: 20px;
+    }
+    &_subtitle {
+      font-size: 30px;
+    }
+  }
+
+}

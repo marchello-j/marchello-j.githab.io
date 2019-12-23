@@ -8,20 +8,34 @@
   .form {
     display: flex;
     flex-direction: row;
+
     @include tablets {
       display: flex;
       width: 60%;
-      
-      align-items: center;
       flex-direction: column;
-      margin-left: 20%;
+      margin-left: 0;
     }
+
     @include phones {
       display: flex;
-      width: 95%;
       align-items: center;
+      width: 95%;
+      margin-left: 2.5%;
+    }
+
+    &__container {
+      display: flex;
       flex-direction: column;
-      margin: 0;
+      justify-content: center;
+      align-items: center;
+
+      @include phones {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        margin: 0;
+      }
     }
   }
 
@@ -30,7 +44,7 @@
     color: $yellow;
     margin-bottom: rem(50px);
   }
-  
+
   &__row {
     display: flex;
     margin-bottom: rem(12px);
@@ -39,6 +53,7 @@
 
   &__col {
     flex: 1;
+
     &:first-child {
       margin-left: rem(-20px);
     }
@@ -48,17 +63,19 @@
     display: flex;
     flex-direction: column;
     margin-left: rem(20px);
-      &_title {
-        font-size: rem(14px);
-        color: $white;
-        @include ubuntu;
-        margin-bottom: rem(10px);
-      }
-      & textarea {
-        resize: none;
-      } 
+
+    &_title {
+      font-size: rem(14px);
+      color: $white;
+      @include ubuntu;
+      margin-bottom: rem(10px);
+    }
+
+    & textarea {
+      resize: none;
+    }
   }
-  
+
   &__input {
     border-radius: rem(6px);
     background-color: #fff;
@@ -70,22 +87,26 @@
     outline: none;
     border: rem(2px) solid transparent;
     width: 100%;
-      &:focus {
-        border: rem(2px) solid $yellow;
-      }
+
+    &:focus {
+      border: rem(2px) solid $yellow;
+    }
   }
+
   &__comment {
     width: 100%;
     margin: 0 rem(20px) 0 rem(40px);
+
     @include tablets {
       margin: 0;
     }
+
     @include phones {
       text-align: center;
-      margin: 0 auto;
+      margin-left: 0;
     }
   }
-  
+
   &__radio {
     display: inline-flex;
     flex-wrap: wrap;
@@ -94,18 +115,22 @@
     white-space: nowrap;
     @include ubuntu;
     color: $white;
-        &_real {
-        width: rem(10px);
-        height: rem(10px);
-        margin: 0 rem(-10px) rem(-10px) 0;
-        opacity: 0;
-        &:checked ~ .form__radio_style {
-          border: rem(1px) solid $red;
-          &::after {
-            opacity: 1;
-          }
+
+    &_real {
+      width: rem(10px);
+      height: rem(10px);
+      margin: 0 rem(-10px) rem(-10px) 0;
+      opacity: 0;
+
+      &:checked~.form__radio_style {
+        border: rem(1px) solid $red;
+
+        &::after {
+          opacity: 1;
         }
+      }
     }
+
     &_style {
       display: inline-block;
       width: rem(20px);
@@ -116,6 +141,7 @@
       border: rem(1px) solid $red;
       position: relative;
       vertical-align: middle;
+
       &::after {
         content: '';
         width: rem(8px);
@@ -130,6 +156,7 @@
         opacity: 0;
       }
     }
+
     &__checkbox {
       display: inline-flex;
       flex-wrap: wrap;
@@ -139,57 +166,64 @@
       @include ubuntu;
       color: $white;
     }
-      &_check {
+
+    &_check {
       display: inline-block;
       width: rem(10px);
       height: rem(10px);
       margin: 0 rem(-10px) rem(-10px) 0;
       opacity: 0;
-        &:checked ~ .form__radio_style-check {
-          &::after {
-            opacity: 1;
-          }
-        }
-      }
-      &_style-check {
-        display: inline-block;
-        width: rem(20px);
-        height: rem(20px);
-        margin-right: rem(10px);
-        background-color: $white;
-        position: relative;
-        vertical-align: middle;
 
+      &:checked~.form__radio_style-check {
         &::after {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          left: rem(3px);
-          top: rem(4px);
-          width: rem(10px);
-          height: rem(5px);
-          border-radius: rem(1px);
-          border-left: rem(4px) solid $red;
-          border-bottom: rem(4px) solid $red;
-          transform: rotate(-45deg);
-          opacity: 0;
+          opacity: 1;
         }
       }
+    }
+
+    &_style-check {
+      display: inline-block;
+      width: rem(20px);
+      height: rem(20px);
+      margin-right: rem(10px);
+      background-color: $white;
+      position: relative;
+      vertical-align: middle;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        left: rem(3px);
+        top: rem(4px);
+        width: rem(10px);
+        height: rem(5px);
+        border-radius: rem(1px);
+        border-left: rem(4px) solid $red;
+        border-bottom: rem(4px) solid $red;
+        transform: rotate(-45deg);
+        opacity: 0;
+      }
+    }
   }
+
   &__footer {
     margin-top: rem(20px);
   }
+
   &__btn {
     border: inherit;
+
     &_reset {
       margin-left: rem(10px);
       @include ubuntu;
       color: $white;
       background: transparent;
       border: transparent;
+
       &:focus {
         border: transparent;
       }

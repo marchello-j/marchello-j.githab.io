@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center center;
   position: relative;
-  
+
   &__container {
     position: absolute;
     width: 50%;
@@ -12,22 +12,23 @@
     right: 0;
     bottom: 0;
     background: rgba(51, 53, 55, .8);
+
     @include tablets {
       width: 100%;
     }
   }
-  
+
   &__title {
     color: $yellow;
     display: flex;
     justify-content: center;
     margin-top: rem(115px);
   }
-  
+
   &-acco {
     display: flex;
     justify-content: center;
-    
+
     &__list {
       display: flex;
       flex-direction: column;
@@ -35,15 +36,15 @@
       justify-content: center;
 
     }
-    
+
     &__item {
       margin-top: rem(35px);
 
     }
-    
+
     &__container {
       margin-left: rem(100px);
-      
+
       @include tablets {
         display: flex;
         flex-direction: column;
@@ -52,26 +53,32 @@
         white-space: nowrap;
         margin: 0;
       }
-      
+
       &--active {
-        
+
         .team-acco__name_icon {
-        transform: rotate(180deg);
+          transform: rotate(180deg);
+          transition: 1s;
         }
-        
+
         .team-acco__name_prof {
           color: $yellow;
+          transition: 1s;
         }
-        
+
         .team-acco__desc {
           height: 100%;
+          transition: 1s;
+
+
         }
       }
     }
-    
+
     &__name {
-      display: flex;       
-             
+      display: flex;
+      cursor: pointer;
+
       &_prof {
         margin-left: rem(18px);
         @include gagalin;
@@ -80,18 +87,20 @@
         font-size: rem(14px);
       }
     }
-    
+
     &__desc {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       height: 0;
       overflow: hidden;
+
       @include tablets {
         display: flex;
         flex-direction: column;
         text-align: center;
       }
+
       &_pic {
         width: rem(132px);
         max-width: rem(132px);
@@ -102,6 +111,7 @@
         object-fit: cover;
         background-position: center center / no-repeat;
         margin: rem(10px) rem(15px);
+
         &:after {
           content: '';
           display: block;
@@ -110,6 +120,7 @@
         }
       }
     }
+
     &__title {
       display: flex;
       flex-direction: column;
@@ -117,10 +128,11 @@
       @include ubuntu;
       line-height: 1.7;
       font-size: rem(14px);
+
       &_desc {
         margin-top: rem(10px);
       }
     }
   }
 
-}  
+}

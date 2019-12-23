@@ -4,38 +4,58 @@
   background-size: cover;
   background-position: center center;
   position: relative;
-  
-  
+
+  &__mmmm {
+    position: static;
+    display: block;
+  }
+
   &__title {
-    top: rem(110px);
-    left: rem(94px);
     position: absolute;
+    top: 10%;
+    left: 5%;
     color: $white;
-      @include phones {
-        left: 10%;
-      }
+
+    @include phones {
+      left: 10%;
     }
+  }
+
   &-acco {
     position: absolute;
     right: 0;
     top: 0;
     bottom: 0;
-    display: flex;
     overflow: hidden;
+    display: flex;
     list-style: none;
     display: flex;
+
     &__item {
       display: flex;
+      position: relative;
+
       &--active .menu-acco__name {
         color: $yellow;
       }
+
       &--active .menu-acco__content {
         max-width: rem(540px);
         padding: rem(62px) rem(35px);
         visibility: visible;
         opacity: 1;
+
+        @include tablets {
+          max-width: rem(300px);
+          padding: rem(32px) rem(17px);
+        }
+
+        @include tablets {
+          max-width: rem(350px);
+        }
       }
     }
+
     &__name {
       position: relative;
       width: rem(80px);
@@ -58,6 +78,7 @@
         transform-origin: 0 0;
       }
     }
+
     &__content {
       background-color: rgba(47, 50, 52, .9);
       color: $white;
