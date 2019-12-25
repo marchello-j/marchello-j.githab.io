@@ -175,13 +175,61 @@ const send = document.querySelector('#btn');
 
 send.addEventListener('click', event => {
   event.preventDefault();
+
+  if (validateForm(myForm)) {
+    const data = {
+      name: myForm.elements.name.value,
+      phone: myForm.elements.phone.value,
+      email: myForm.elements.email.value,
+      comment: myForm.elements.comment.value
+    };
+
+    const xhr = new XMLHttpRequest();
+    xhr.responseType = 'json';
+    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+    xhr.send(JSON.stringify(data));
+    xhr.addEventListener('load', () => {
+      if(xhr.response.status) {
+        console.log('Ok');
+      }
+    }); 
+ }
+
+  if (myForm.elements.change.checked == true) {
+    console.log('Нужна сдача!');
+  }
+
+  if (myForm.elements.payCard.checked == true) {
+    console.log('Оплата по карте!');
+  }
+
+  if (myForm.elements.call.checked == true) {
+    console.log('Оплата по карте!');
+  }
+});
+
+function validateForm(form) {
+  let valid = true;
+
+  if (!validateField(form.elements.name)) {
+    valid = false;
+  }
   
-  console.log(myForm.elements.name.value);
-  console.log(myForm.elements.phone.value);
-  console.log(myForm.elements.change.checked);
-  console.log(myForm.elements.payCard.checked);
-  console.log(myForm.elements.call.checked);
-})
+  if (!validateField(form.elements.phone)) {
+    valid = false;
+  }
+  
+  if (!validateField(form.elements.email)) {
+    valid = false;
+  }
 
+  return valid;
+}
 
+function validateField(field) {
+  if (!field.checkValidity()) {
+    field.nextElementSibling.textContent = field.validationMessage;
+    return field.checkValidity();
+  }
+}
 

@@ -1378,6 +1378,13 @@ p {
       border: transparent; }
       .form__btn_reset:focus {
         border: transparent; }
+  .form__error {
+    color: #e35028;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: oblique;
+    font-size: 0.875rem;
+    letter-spacing: 1.7; }
 
 .footer {
   background-image: url(./my_page/img/pagefooter/bgfooter.png);

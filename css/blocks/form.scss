@@ -229,4 +229,11 @@
       }
     }
   }
+  &__error {
+    color: $red;
+    @include ubuntu;
+    font-style: oblique;
+    font-size: rem(14px);
+    letter-spacing: 1.7;
+  }
 }
