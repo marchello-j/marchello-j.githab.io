@@ -1,0 +1,51 @@
+.duration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(20px);
+    cursor: pointer;
+    fill: #626262;
+  }
+
+  &__length {
+    width: 444px;
+    height: 4px;
+    border-radius: rem(1px);
+    background-color: #626262;
+    appearance: none;
+    outline: none;
+    margin-top: rem(5px);
+   
+
+    &--other {
+      width: rem(58px);
+      height: rem(4px);
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      background: #626262;
+      cursor: pointer;
+      width: rem(13px);
+      height: rem(13px);
+      border-radius: 50%;
+    }
+  }
+
+  &__citcle {
+    cursor: pointer;
+    margin-top: rem(-5px);
+    display: block;
+
+    &--heigh {
+      right: 0;
+      position: absolute;
+    }
+  }
+}

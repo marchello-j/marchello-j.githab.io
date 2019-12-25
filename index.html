@@ -168,7 +168,7 @@
                 <span class="slider__prise_title">500 <span class="slider__prise_subtitle">рублей</span></span>
                 <div class="header__order__btn">
                   <a href="#" class="btn">заказать</a>
-              </div>
+                </div>
               </div>
             </div>   
           </li>
@@ -408,24 +408,58 @@
         </ul>
   </section>
   <section class="section work">
-  
+    <div class="container work__container">
+      <h2 class="title work__title">Как мы работаем</h2>
+      <div class="work__video">
+        <div class="work__player">
+          <video width="660" height="370" id="player" poster="/my_page/img/pageWork/playerbg.png">
+            <source src="./my_page/img/pageWork/video.mp4" type="video/mp4">
+          </video>
+          <div class="play work__player_img">
+            <svg width="80" height="120">
+              <use xlink:href="./my_page/svg/sprite.svg#play"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="work__toolbar">
+          <div class="duration">
+            <div class="play duration__img">
+              <svg width="16" height="24">
+                <use xlink:href="./my_page/svg/sprite.svg#play"></use>
+              </svg>
+            </div>   
+              <input type="range" class="duration__length" id="durationLevel">
+          </div>
+          <div class="sound">
+              <div class="sound__mic" id="mic" alt="">
+                <svg width="16" height="24">
+                  <use xlink:href="./my_page/svg/sprite.svg#volume"></use>
+                </svg>
+              </div>
+            <div class="sound__volume">
+              <input type="range" class="duration__length duration__length--other" id="micLevel">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <section class="section form">
     <div class="container form__container">
       <div class="title form__title">Закажите доставку</div>
-      <form action="" class="form">
+      <form action="" class="form" id="form">
         <div class="form__list">  
           <div class="form__row">
             <div class="form__col">
               <label class="form__label">
                 <span class="form__label_title">Имя</span>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="name" required>
               </label>
             </div>
             <div class="form__col">
               <label class="form__label">
                 <span class="form__label_title">Телефон</span>
-                <input type="text" class="form__input">
+                <input type="number" class="form__input" name="phone" required>
               </label>
             </div>
           </div>
@@ -433,7 +467,7 @@
             <div class="form__col">
               <label class="form__label">
                 <span class="form__label_title">Улица</span>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="street">
               </label>
             </div>
           </div>
@@ -441,25 +475,25 @@
             <div class="form__col">
               <label class="form__label">
                 <span class="form__label_title">Дом</span>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="home">
               </label>
             </div>
             <div class="form__col">
               <label class="form__label">
                 <span class="form__label_title">Корпус</span>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="housing">
               </label>
             </div>
             <div class="form__col">
               <label class="form__label">
                 <span class="form__label_title">Квартира</span>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="apartment">
               </label>
             </div>
             <div class="form__col">
               <label class="form__label">
                 <span class="form__label_title">Этаж</span>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="floor">
               </label>
             </div>
           </div>
@@ -474,12 +508,12 @@
           </div>
           <div class="form__rad">
             <label class="form__radio">
-              <input type="radio" class="form__radio_real" name="pay">
+              <input type="radio" class="form__radio_real" name="change">
                 <span class="form__radio_style"></span>
                 <span class="form__radio_title">Потребуется сдача</span>
             </label>
             <label class="form__radio">
-              <input type="radio" class="form__radio_real" name="pay">
+              <input type="radio" class="form__radio_real" name="payCard">
                 <span class="form__radio_style"></span>
                 <span class="form__radio_title">Оплата по карте</span>
             </label>
@@ -492,7 +526,7 @@
             </label>
           </div>
           <div class="form__footer">
-            <input class="btn form__btn" name="" type="submit" value="Заказать">
+            <input class="btn form__btn" id="btn" name="" type="submit" value="Заказать">
             <input class="form__btn_reset" name="" type="reset" value="Очистить">
           </div>
         </div>

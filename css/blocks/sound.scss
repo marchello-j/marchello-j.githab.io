@@ -1,0 +1,21 @@
+.sound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: rem(30px);
+
+  &__mic {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(8px);
+    margin-top: rem(4px);
+    fill: #626262;
+
+  }
+
+  &__volume {
+    margin-left: rem(20px);
+  }
+}
