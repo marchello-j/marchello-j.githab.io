@@ -38,9 +38,39 @@
     cursor: pointer;
   }
 
+  &__menu {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__list {
+    width: 960px;
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    will-change: right;
+    transition: .5s all ease-out;
+
+    @include tablets {
+      display: flex;
+    }
+
+  }
+
   &__item {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__burger {
@@ -49,9 +79,29 @@
     justify-content: flex-start;
     align-items: flex-start;
 
+    @include tablets {
+      &_img {
+        width: 100%;
+        top: 50%;
+        left: 30%;
+      }
+    }
+
+    @include tablets {
+      display: flex;
+      flex-direction: row;
+    }
+
     &__drop {
       margin: 0 0 rem(-15px) rem(30px);
       cursor: pointer;
+
+      @include tablets {
+        display: flex;
+        flex-direction: row;
+        width: 10%;
+      }
+
       &:hover {
         background: $red;
         border-radius: 10px;
@@ -61,6 +111,12 @@
     &__icon {
       margin-left: rem(30px);
       margin-top: rem(-25px);
+
+      @include tablets {
+        position: absolute;
+        right: 40%;
+        top: 4%;
+      }
     }
   }
 
@@ -70,22 +126,31 @@
     justify-content: space-evenly;
     color: $white;
 
+    @include tablets {
+      text-align: center;
+      width: 60%;
+    }
+
+
     & p {
       font-size: 14px;
       @include ubuntu;
       line-height: 1.714;
     }
   }
+
   &__prise {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+
     &_title {
       @include gagalin;
       font-size: 72px;
       color: $red;
       margin-right: 20px;
     }
+
     &_subtitle {
       font-size: 30px;
     }
