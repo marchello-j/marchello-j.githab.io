@@ -8,6 +8,7 @@
   &__container {
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
 
   &__left {
@@ -16,7 +17,6 @@
     background-image: url("./my_page/img/pageheder/arrow-scroll.png");
     background-repeat: no-repeat;
     background-size: contain;
-    display: block;
     position: absolute;
     left: 5%;
     bottom: 50%;
@@ -30,7 +30,6 @@
     background-image: url("./my_page/img/pageheder/arrow-scroll.png");
     background-repeat: no-repeat;
     background-size: contain;
-    display: block;
     position: absolute;
     right: 5%;
     bottom: 50%;
@@ -38,38 +37,48 @@
     cursor: pointer;
   }
 
+  &__title {
+    @include phones {
+      font-size: rem(50px);
+    }
+  }
+
   &__menu {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-  }
-
-  &__list {
-    width: 960px;
-    display: flex;
-    position: relative;
-    list-style-type: none;
-    will-change: right;
-    transition: .5s all ease-out;
 
     @include tablets {
       display: flex;
+      align-items: center;
+      justify-content: center;
     }
+  }
 
+  &__list {
+    width: 100%;
+    position: relative;
   }
 
   &__item {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    flex-grow: 0;
-    flex-shrink: 0;
+    display: none;
+
+    &:first-of-type {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      @include tablets {
+        display: flex;
+        flex-direction: column;
+      }
+    }
 
     @include tablets {
       display: flex;
       flex-direction: column;
-      justify-content: center;
     }
   }
 
@@ -77,35 +86,42 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
 
-    @include tablets {
-      &_img {
+    &--img {
+      @include tablets {
         width: 100%;
-        top: 50%;
-        left: 30%;
+        margin-top: 15%;
+      }
+
+      @include phones {
+        width: 100%;
+        margin-top: 20%;
       }
     }
 
     @include tablets {
+      width: 80%;
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      margin-left: 10%;
     }
 
     &__drop {
       margin: 0 0 rem(-15px) rem(30px);
       cursor: pointer;
-
+     /*  width: rem(90px);
+      height: rem(90px);
+ */
       @include tablets {
-        display: flex;
-        flex-direction: row;
-        width: 10%;
+        margin: 0;
       }
+      
 
-      &:hover {
+      /* &:hover {
         background: $red;
-        border-radius: 10px;
-      }
+        border-radius: rem(10px);
+      } */
     }
 
     &__icon {
@@ -113,9 +129,36 @@
       margin-top: rem(-25px);
 
       @include tablets {
+        width: 10%;
         position: absolute;
-        right: 40%;
-        top: 4%;
+        right: 17%;
+        top: 2%;
+      }
+
+      @include phones {
+        width: 100%;
+        position: absolute;
+        right: 17%;
+        top: 3%;
+      }
+
+
+    }
+
+    &--icon {
+      @include phones {
+        width: 8%;
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    &_img {
+      @include tablets {
+        width: 10%;
+        position: absolute;
+        left: 20%;
+        margin-top: -1%;
       }
     }
   }
@@ -128,14 +171,26 @@
 
     @include tablets {
       text-align: center;
-      width: 60%;
+      margin-bottom: rem(50px);
     }
-
 
     & p {
       font-size: 14px;
       @include ubuntu;
       line-height: 1.714;
+
+      @include tablets {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+      }
+
+      @include phones {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+        font-size: 12px;
+      }
     }
   }
 
@@ -144,15 +199,37 @@
     flex-direction: row;
     align-items: baseline;
 
+    @include phones {
+      margin-top: 5%;
+      white-space: nowrap;
+    }
+
     &_title {
       @include gagalin;
       font-size: 72px;
       color: $red;
       margin-right: 20px;
+      
+
+      @include tablets {
+        margin-left: 25%;
+        margin-top: 5%;
+        white-space: nowrap;
+      }
+
+      @include phones {
+        margin-left: 25%;
+        margin-top: 5%;
+        white-space: nowrap;
+        font-size: 30px;
+      }
     }
 
     &_subtitle {
       font-size: 30px;
+      @include phones {
+        font-size: 15px;
+      }
     }
   }
 

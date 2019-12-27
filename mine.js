@@ -236,7 +236,7 @@ function validateField(field) {
 /////// slider
 
 
-const left = document.querySelector("#left");
+/* const left = document.querySelector("#left");
 const right = document.querySelector("#right");
 const list = document.querySelector("#list");
 
@@ -261,4 +261,37 @@ left.addEventListener("click", function (e) {
     currentRight -= step;
     list.style.right = currentRight + "px";
   }
+}); */
+
+
+// slider
+
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+
+const items = document.querySelectorAll('#list .slider__item');
+let i = 0;
+
+right.addEventListener('click', function (e) {
+  e.preventDefault();
+  items[i].style.display = 'none';
+  i++;
+
+  if (i >= items.length) {
+    i = 0;
+  }
+
+  items[i].style.display = 'flex';
+});
+
+left.addEventListener('click', function (e) {
+  e.preventDefault();
+  items[i].style.display = 'none';
+  i--;
+
+  if (i < 0) {
+    i = items.length - 1;
+  }
+
+  items[i].style.display = 'flex';
 });
