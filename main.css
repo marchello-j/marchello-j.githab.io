@@ -835,8 +835,6 @@ p {
       .slider__burger_img:hover {
         background: #e35028;
         border-radius: 0.3125rem; }
-        .slider__burger_img:hover .drop {
-          opacity: 1; }
       @media screen and (max-width: 768px) {
         .slider__burger_img {
           width: 10%;
@@ -912,35 +910,30 @@ p {
         .slider__prise_subtitle {
           font-size: 15px; } }
 
-.slider__burger_imsg.drop {
-  display: block; }
+/* .slider__burger_imsg.drop {
+  display: block;
+}
 
 .drop {
   position: absolute;
   left: 122px;
   top: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba($color: white, $alpha: 0.9);
   border-radius: 5px;
   width: 270px;
   height: 330px;
-  display: none; }
-  .drop__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    font-family: 'Ubuntu', Helvetica, sans-serif;
-    font-weight: 300;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 10px; }
+  display: none;
 
+  &__item {
+    display: flex;
+    flex-direction: row;
+    @include ubuntu;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+} */
 .team {
   background-image: url(./my_page/img/pageteam/bgteam.png);
   background-repeat: no-repeat;
@@ -1793,13 +1786,28 @@ p {
 } */
 .drop {
   position: absolute;
-  left: 122px;
+  left: 121px;
   top: 0;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   width: 270px;
   height: 330px;
-  display: none; }
+  opacity: 0;
+  -webkit-transition: 1s ease-out;
+  -o-transition: 1s ease-out;
+  transition: 1s ease-out; }
+  @media screen and (max-width: 768px) {
+    .drop {
+      width: 30%;
+      height: 40%;
+      left: 30%;
+      margin-top: -1%; } }
+  @media screen and (max-width: 480px) {
+    .drop {
+      width: 40%;
+      height: 50%; } }
+  .drop__active {
+    opacity: 1; }
   .drop__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1815,4 +1823,10 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 10px; }
+    margin-top: 0.625rem; }
+    @media screen and (max-width: 480px) {
+      .drop__item {
+        margin-top: 0rem; } }
+
+.slider__burger__active .drop {
+  opacity: 1; }

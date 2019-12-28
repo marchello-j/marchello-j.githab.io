@@ -299,12 +299,12 @@ left.addEventListener('click', function (e) {
 
 //// drop
 
-$(function () {
+/* $(function () {
 
-  var button = $('.slider__burger_img');
-  var active = '.slider__burger_img--active';
+  var buttonDark = $('.slider__burger');
+  var active = '.drop__active';
 
-  button.click(function (event) {
+  buttonDark.click(function (event) {
     event.preventDefault();
     var parent = $(this).parent();
 
@@ -313,9 +313,17 @@ $(function () {
     }
 
     else {
-      button.parent().removeClass(active);
+      buttonDark.parent().removeClass(active);
       parent.addClass(active);
     }
 
   });
-});
+}); */
+
+document.querySelector('.slider__burger_img').addEventListener('click', _ => {
+  document.querySelector('.drop').classList.toggle('drop__active');
+    $(".drop").click(function () {
+      $(this).toggleClass("drop__active");
+      
+    });
+  });

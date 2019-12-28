@@ -153,9 +153,6 @@
         background: $red;
         border-radius: rem(5px);
 
-        .drop {
-          opacity: 1;
-        }
       }
 
       @include tablets {
@@ -240,7 +237,7 @@
 
 }
 
-.slider__burger_imsg.drop {
+/* .slider__burger_imsg.drop {
   display: block;
 }
 
@@ -263,4 +260,4 @@
     margin-top: 10px;
   }
 
-}
+} */
