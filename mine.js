@@ -295,3 +295,27 @@ left.addEventListener('click', function (e) {
 
   items[i].style.display = 'flex';
 });
+
+
+//// drop
+
+$(function () {
+
+  var button = $('.slider__burger_img');
+  var active = '.slider__burger_img--active';
+
+  button.click(function (event) {
+    event.preventDefault();
+    var parent = $(this).parent();
+
+    if (parent.hasClass(active)) {
+      parent.removeClass(active);
+    }
+
+    else {
+      button.parent().removeClass(active);
+      parent.addClass(active);
+    }
+
+  });
+});

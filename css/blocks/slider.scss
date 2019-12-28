@@ -110,18 +110,10 @@
     &__drop {
       margin: 0 0 rem(-15px) rem(30px);
       cursor: pointer;
-     /*  width: rem(90px);
-      height: rem(90px);
- */
+
       @include tablets {
         margin: 0;
       }
-      
-
-      /* &:hover {
-        background: $red;
-        border-radius: rem(10px);
-      } */
     }
 
     &__icon {
@@ -146,6 +138,7 @@
     }
 
     &--icon {
+
       @include phones {
         width: 8%;
         position: absolute;
@@ -154,6 +147,17 @@
     }
 
     &_img {
+      position: relative;
+
+      &:hover {
+        background: $red;
+        border-radius: rem(5px);
+
+        .drop {
+          opacity: 1;
+        }
+      }
+
       @include tablets {
         width: 10%;
         position: absolute;
@@ -209,7 +213,7 @@
       font-size: 72px;
       color: $red;
       margin-right: 20px;
-      
+
 
       @include tablets {
         margin-left: 25%;
@@ -227,10 +231,36 @@
 
     &_subtitle {
       font-size: 30px;
+
       @include phones {
         font-size: 15px;
       }
     }
+  }
+
+}
+
+.slider__burger_imsg.drop {
+  display: block;
+}
+
+.drop {
+  position: absolute;
+  left: 122px;
+  top: 0;
+  background: rgba($color: white, $alpha: 0.9);
+  border-radius: 5px;
+  width: 270px;
+  height: 330px;
+  display: none;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    @include ubuntu;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
   }
 
 }

@@ -806,14 +806,7 @@ p {
         margin-left: 10%; } }
     .slider__burger__drop {
       margin: 0 0 -0.9375rem 1.875rem;
-      cursor: pointer;
-      /*  width: rem(90px);
-      height: rem(90px);
- */
-      /* &:hover {
-        background: $red;
-        border-radius: rem(10px);
-      } */ }
+      cursor: pointer; }
       @media screen and (max-width: 768px) {
         .slider__burger__drop {
           margin: 0; } }
@@ -837,12 +830,19 @@ p {
         width: 8%;
         position: absolute;
         right: 0; } }
-    @media screen and (max-width: 768px) {
-      .slider__burger_img {
-        width: 10%;
-        position: absolute;
-        left: 20%;
-        margin-top: -1%; } }
+    .slider__burger_img {
+      position: relative; }
+      .slider__burger_img:hover {
+        background: #e35028;
+        border-radius: 0.3125rem; }
+        .slider__burger_img:hover .drop {
+          opacity: 1; }
+      @media screen and (max-width: 768px) {
+        .slider__burger_img {
+          width: 10%;
+          position: absolute;
+          left: 20%;
+          margin-top: -1%; } }
   .slider__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -911,6 +911,35 @@ p {
       @media screen and (max-width: 480px) {
         .slider__prise_subtitle {
           font-size: 15px; } }
+
+.slider__burger_imsg.drop {
+  display: block; }
+
+.drop {
+  position: absolute;
+  left: 122px;
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  width: 270px;
+  height: 330px;
+  display: none; }
+  .drop__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    font-weight: 300;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px; }
 
 .team {
   background-image: url(./my_page/img/pageteam/bgteam.png);
@@ -1762,3 +1791,28 @@ p {
     margin-left: rem(20px);
   }
 } */
+.drop {
+  position: absolute;
+  left: 122px;
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  width: 270px;
+  height: 330px;
+  display: none; }
+  .drop__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    font-weight: 300;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px; }
