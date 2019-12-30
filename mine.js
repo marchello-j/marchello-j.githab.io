@@ -320,10 +320,14 @@ left.addEventListener('click', function (e) {
   });
 }); */
 
-document.querySelector('.slider__burger_img').addEventListener('click', _ => {
+/* document.querySelector('.slider__burger_img').addEventListener('click', _ => {
   document.querySelector('.drop').classList.toggle('drop__active');
-    $(".drop").click(function () {
-      $(this).toggleClass("drop__active");
-      
     });
-  });
+  }); */
+
+$(function () {
+  $(".slider__burger_img").on("click", function (event) {
+    event.preventDefault();
+    $(".drop").toggleClass("drop__active");
+  })
+});
