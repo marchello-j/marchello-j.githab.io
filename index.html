@@ -9,6 +9,16 @@
 </head>
 <body>
   <header class="header">
+    <!-- <div id="toggle-icon"><i class="material-icons">menu</i></div>
+		<div class="menu-overlay">
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div> -->
     <div class="container header__container">
       <svg class="logo">
         <use xlink:href="./my_page/svg/sprite.svg#logo"></use>
@@ -46,14 +56,26 @@
           </div>
           <div class="burger__menu">
             <a href="#" class="burger__menu">
-              <span class="burger__menu__link"></span>
+              <span class="burger__menu__link" onclick="openNav()"></span>
             </a>
+            <!-- <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <div class="overlay__content">
+                <a href="#">о нас</a>
+                <a href="#">бургеры</a>
+                <a href="#">команда</a>
+                <a href="#">меню</a>
+                <a href="#">отзывы</a>
+                <a href="#">как мы работаем</a>
+                <a href="#">контакты</a>
+              </div>
+            </div> -->
           </div>
         </div>
     </div>
   </header>
   <section class="section promo">
-      <div class="container promo__container">
+        <div class="container promo__container">
         <div class="promo__content">
           <img class="promo__img" src="./my_page/img/pageheder/burger.png" alt="Фотогрфия бургера">
           <h1 class="title promo__title">
@@ -812,7 +834,7 @@
         </ul>
   </section>
   <section class="section work">
-    <!-- <div class="container work__container">
+    <div class="container work__container">
       <h2 class="title work__title">Как мы работаем</h2>
       <div class="work__video">
         <div class="work__player">
@@ -846,7 +868,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </section>
   <section class="section form">
     <div class="container form__container">

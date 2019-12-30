@@ -325,9 +325,52 @@ left.addEventListener('click', function (e) {
     });
   }); */
 
-$(function () {
+document.addEventListener("DOMContentLoaded", function () {
+  $(function () {
+    $(".slider__burger_img").on("click", function (event) {
+      event.preventDefault();
+      $(".drop").toggleClass("drop__active");
+    })
+  });
+});
+
+
+/* $(function () {
   $(".slider__burger_img").on("click", function (event) {
     event.preventDefault();
     $(".drop").toggleClass("drop__active");
   })
 });
+ */
+
+
+ /// overley
+
+/* var btnBurgerMenu = document.querySelector('.burger__menu__link');
+
+btnBurgerMenu('click', function (e) {
+  e.preventDefault();
+});
+
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+};
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+};
+ */
+
+///////
+
+
+/* $('#toggle-icon').click(function (e) {
+  e.preventDefault();
+  $('.menu-overlay').toggleClass('active');
+  if ($('.menu-overlay').hasClass('active')) {
+    $('.material-icons').text('menu_open');
+  } else {
+    $('.material-icons').text('menu');
+  }
+}); */
+

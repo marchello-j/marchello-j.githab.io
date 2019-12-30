@@ -62,7 +62,7 @@
   &__item {
     display: none;
 
-    &:first-of-type {
+    &:first-child {
       display: flex;
       flex-direction: row;
       width: 100%;
@@ -80,12 +80,13 @@
       display: flex;
       flex-direction: column;
     }
+
   }
 
   &__burger {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-cossssntent: flex-start;
 
     &--img {
       @include tablets {
@@ -237,11 +238,11 @@
 
 }
 
-/* .slider__burger_imsg.drop {
+.slider__burger_img.drop {
   display: block;
 }
 
-.drop {
+/* .drop {
   position: absolute;
   left: 122px;
   top: 0;
